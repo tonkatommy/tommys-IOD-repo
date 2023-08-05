@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dice Number Generator</title>
+    <style>
+      .dice {
+        width: 100px;
+        height: 100px;
+        background-image: url("dice.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        animation-name: roll;
+        animation-duration: 2s;
+        animation-timing-function: ease-in-out;
+      }
+
+      @keyframes roll {
+        0% {
+          background-position: 0 0;
+        }
+        100% {
+          background-position: -600px 0;
+        }
+      }
+    </style>
+    <script>
+      function rollDice() {
+        var diceSides = parseInt(document.getElementById("dice-sides").value);
+        var randomNumber = Math.floor(Math.random() * diceSides) + 1;
+        var dice = document.getElementById("dice");
+        dice.style.animationName = "none";
+        void dice.offsetWidth; // Trigger reflow to restart the animation
+        dice.style.animationName = "roll";
+        dice.style.animationPlayState = "running";
+        setTimeout(function () {
+          dice.style.animationPlayState = "paused";
+          dice.style.backgroundPosition =
+            "-" + (randomNumber - 1) * 100 + "px 0";
+        }, 2000);
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Dice Number Generator</h1>
+    <div class="dice" id="dice"></div>
+    <label for="dice-sides">Select the number of sides:</label>
+    <select id="dice-sides">
+      <option value="4">4</option>
+      <option value="6">6</option>
+      <option value="8">8</option>
+      <option value="10">10</option>
+      <option value="12">12</option>
+      <option value="20">20</option>
+    </select>
+    <button onclick="rollDice()">Roll</button>
+  </body>
+</html>

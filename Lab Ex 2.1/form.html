@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
-  <head>
-  </head>
+  <head> </head>
   <body>
     <header>
       <nav>
@@ -10,6 +9,74 @@
       </nav>
     </header>
     <main>
+      <form method="POST" action="http://localhost:3000/profile">
+        <div class="myform">
+          <label for="name">Enter your First name: </label>
+          <input type="text" name="name" id="name" required />
+        </div>
+        <div class="myform">
+          <label for="lastName">Enter your Last name: </label>
+          <input type="text" name="lastName" id="lastName" required />
+        </div>
+        <div class="myform">
+          <fieldset>
+            <legend>Please select your preferred contact method:</legend>
+            <div>
+              <input
+                type="radio"
+                id="contactEmail"
+                name="contact"
+                value="email"
+                checked
+              />
+              <label for="contactEmail">Email</label>
+
+              <input
+                type="radio"
+                id="contactPhone"
+                name="contact"
+                value="phone"
+              />
+              <label for="contactPhone">Phone</label>
+
+              <input
+                type="radio"
+                id="contactMail"
+                name="contact"
+                value="mail"
+              />
+              <label for="contactMail">Mail</label>
+            </div>
+          </fieldset>
+        </div>
+        <div>
+          <input type="checkbox" id="coding" name="interest" value="coding" />
+          <label for="coding">Coding</label>
+        </div>
+        <div>
+          <input
+            type="checkbox"
+            id="snowboarding"
+            name="interest"
+            value="snowboarding"
+          />
+          <label for="snowboarding">Snowboarding</label>
+        </div>
+        <label for="pet-select">Choose a pet:</label>
+
+        <select name="pets" id="pet-select">
+          <option value="">--Please choose an option--</option>
+          <option value="dog">Dog</option>
+          <option value="cat">Cat</option>
+          <option value="hamster">Hamster</option>
+          <option value="parrot">Parrot</option>
+          <option value="spider">Spider</option>
+          <option value="goldfish">Goldfish</option>
+        </select>
+        <div>
+          <button type="submit">Submit Form</button>
+        </div>
+      </form>
     </main>
     <footer>Copyright 2021 &copy;</footer>
   </body>

@@ -1,0 +1,4069 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:x="urn:schemas-microsoft-com:office:excel"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Excel.Sheet>
+<meta name=Generator content="Microsoft Excel 15">
+<link id=Main-File rel=Main-File href="../Car-sales-MOCK_DATA.htm">
+<link rel=File-List href=filelist.xml>
+<link rel=Stylesheet href=stylesheet.css>
+<style>
+<!--table
+	{mso-displayed-decimal-separator:"\.";
+	mso-displayed-thousand-separator:"\,";}
+@page
+	{margin:.75in .7in .75in .7in;
+	mso-header-margin:.3in;
+	mso-footer-margin:.3in;}
+-->
+</style>
+<![if !supportTabStrip]><script language="JavaScript">
+<!--
+function fnUpdateTabs()
+ {
+  if (parent.window.g_iIEVer>=4) {
+   if (parent.document.readyState=="complete"
+    && parent.frames['frTabs'].document.readyState=="complete")
+   parent.fnSetActiveSheet(0);
+  else
+   window.setTimeout("fnUpdateTabs();",150);
+ }
+}
+
+if (window.name!="frSheet")
+ window.location.replace("../Car-sales-MOCK_DATA.htm");
+else
+ fnUpdateTabs();
+//-->
+</script>
+<![endif]>
+</head>
+
+<body link="#0563C1" vlink="#954F72">
+
+<table border=0 cellpadding=0 cellspacing=0 width=535 style='border-collapse:
+ collapse;table-layout:fixed;width:401pt'>
+ <col width=104 style='mso-width-source:userset;mso-width-alt:3803;width:78pt'>
+ <col width=136 style='mso-width-source:userset;mso-width-alt:4973;width:102pt'>
+ <col width=59 style='mso-width-source:userset;mso-width-alt:2157;width:44pt'>
+ <col width=83 style='mso-width-source:userset;mso-width-alt:3035;width:62pt'>
+ <col width=82 style='mso-width-source:userset;mso-width-alt:2998;width:62pt'>
+ <col width=71 style='mso-width-source:userset;mso-width-alt:2596;width:53pt'>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 width=104 style='height:15.0pt;width:78pt'>car_make</td>
+  <td width=136 style='width:102pt'>car_model</td>
+  <td width=59 style='width:44pt'>car_year</td>
+  <td width=83 style='width:62pt'>car_color</td>
+  <td width=82 style='width:62pt'>car_mileage</td>
+  <td width=71 style='width:53pt'>car_price</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Pontiac</td>
+  <td>Montana</td>
+  <td align=right>2000</td>
+  <td>Green</td>
+  <td align=right>30601</td>
+  <td class=xl65 align=right>$33,086.09</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Mercedes-Benz</td>
+  <td>S-Class</td>
+  <td align=right>1991</td>
+  <td>Red</td>
+  <td align=right>138220</td>
+  <td class=xl65 align=right>$68,013.42</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Mercury</td>
+  <td>Tracer</td>
+  <td align=right>1991</td>
+  <td>Purple</td>
+  <td align=right>173152</td>
+  <td class=xl65 align=right>$63,262.26</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Mazda</td>
+  <td>MPV</td>
+  <td align=right>2002</td>
+  <td>Turquoise</td>
+  <td align=right>74851</td>
+  <td class=xl65 align=right>$70,422.43</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Subaru</td>
+  <td>BRZ</td>
+  <td align=right>2013</td>
+  <td>Maroon</td>
+  <td align=right>102165</td>
+  <td class=xl65 align=right>$66,136.33</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Hyundai</td>
+  <td>Elantra</td>
+  <td align=right>2008</td>
+  <td>Fuscia</td>
+  <td align=right>101979</td>
+  <td class=xl65 align=right>$26,385.51</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Pontiac</td>
+  <td>Grand Am</td>
+  <td align=right>1999</td>
+  <td>Yellow</td>
+  <td align=right>151014</td>
+  <td class=xl65 align=right>$11,182.96</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Ford</td>
+  <td>Probe</td>
+  <td align=right>1997</td>
+  <td>Orange</td>
+  <td align=right>179727</td>
+  <td class=xl65 align=right>$53,060.62</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Chrysler</td>
+  <td>Town &amp; Country</td>
+  <td align=right>2006</td>
+  <td>Pink</td>
+  <td align=right>112424</td>
+  <td class=xl65 align=right>$66,701.84</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Mazda</td>
+  <td>Miata MX-5</td>
+  <td align=right>2006</td>
+  <td>Mauv</td>
+  <td align=right>61324</td>
+  <td class=xl65 align=right>$70,925.16</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>GMC</td>
+  <td>Sonoma</td>
+  <td align=right>1999</td>
+  <td>Khaki</td>
+  <td align=right>102076</td>
+  <td class=xl65 align=right>$8,170.00</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Saab</td>
+  <td class=xl66 align=right>9-May</td>
+  <td align=right>2007</td>
+  <td>Mauv</td>
+  <td align=right>125703</td>
+  <td class=xl65 align=right>$51,417.87</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Chevrolet</td>
+  <td>Silverado 1500</td>
+  <td align=right>2008</td>
+  <td>Green</td>
+  <td align=right>98766</td>
+  <td class=xl65 align=right>$15,260.12</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>BMW</td>
+  <td>Z3</td>
+  <td align=right>1998</td>
+  <td>Orange</td>
+  <td align=right>64380</td>
+  <td class=xl65 align=right>$81,906.34</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Toyota</td>
+  <td>Camry</td>
+  <td align=right>2011</td>
+  <td>Orange</td>
+  <td align=right>20958</td>
+  <td class=xl65 align=right>$97,742.35</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>BMW</td>
+  <td>5 Series</td>
+  <td align=right>1997</td>
+  <td>Maroon</td>
+  <td align=right>160377</td>
+  <td class=xl65 align=right>$50,574.86</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Kia</td>
+  <td>Spectra</td>
+  <td align=right>2002</td>
+  <td>Orange</td>
+  <td align=right>54911</td>
+  <td class=xl65 align=right>$70,848.52</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Mercedes-Benz</td>
+  <td>400E</td>
+  <td align=right>1993</td>
+  <td>Khaki</td>
+  <td align=right>161636</td>
+  <td class=xl65 align=right>$26,466.11</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Ford</td>
+  <td>Mustang</td>
+  <td align=right>1997</td>
+  <td>Maroon</td>
+  <td align=right>189310</td>
+  <td class=xl65 align=right>$55,401.36</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Chevrolet</td>
+  <td align=right>2500</td>
+  <td align=right>1993</td>
+  <td>Blue</td>
+  <td align=right>102486</td>
+  <td class=xl65 align=right>$92,311.68</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Mazda</td>
+  <td>MX-5</td>
+  <td align=right>1997</td>
+  <td>Mauv</td>
+  <td align=right>14255</td>
+  <td class=xl65 align=right>$76,286.92</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Cadillac</td>
+  <td>XLR</td>
+  <td align=right>2008</td>
+  <td>Purple</td>
+  <td align=right>40554</td>
+  <td class=xl65 align=right>$77,925.46</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Ford</td>
+  <td>F150</td>
+  <td align=right>1993</td>
+  <td>Red</td>
+  <td align=right>163029</td>
+  <td class=xl65 align=right>$35,216.48</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Geo</td>
+  <td>Metro</td>
+  <td align=right>1992</td>
+  <td>Green</td>
+  <td align=right>180154</td>
+  <td class=xl65 align=right>$15,205.47</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Chevrolet</td>
+  <td>Volt</td>
+  <td align=right>2011</td>
+  <td>Maroon</td>
+  <td align=right>179495</td>
+  <td class=xl65 align=right>$3,330.37</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Toyota</td>
+  <td>Sienna</td>
+  <td align=right>2011</td>
+  <td>Orange</td>
+  <td align=right>148093</td>
+  <td class=xl65 align=right>$32,649.06</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Nissan</td>
+  <td>Altima</td>
+  <td align=right>2010</td>
+  <td>Mauv</td>
+  <td align=right>124603</td>
+  <td class=xl65 align=right>$35,197.63</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Volvo</td>
+  <td>S40</td>
+  <td align=right>2009</td>
+  <td>Pink</td>
+  <td align=right>75111</td>
+  <td class=xl65 align=right>$46,899.51</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>GMC</td>
+  <td>Savana 2500</td>
+  <td align=right>2001</td>
+  <td>Green</td>
+  <td align=right>177537</td>
+  <td class=xl65 align=right>$25,835.32</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Austin</td>
+  <td>Mini Cooper</td>
+  <td align=right>1964</td>
+  <td>Turquoise</td>
+  <td align=right>68863</td>
+  <td class=xl65 align=right>$66,159.55</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Dodge</td>
+  <td>Grand Caravan</td>
+  <td align=right>2011</td>
+  <td>Pink</td>
+  <td align=right>45890</td>
+  <td class=xl65 align=right>$55,859.60</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Mercedes-Benz</td>
+  <td>CLK-Class</td>
+  <td align=right>2004</td>
+  <td>Crimson</td>
+  <td align=right>132125</td>
+  <td class=xl65 align=right>$17,412.89</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Oldsmobile</td>
+  <td>Alero</td>
+  <td align=right>2002</td>
+  <td>Maroon</td>
+  <td align=right>26912</td>
+  <td class=xl65 align=right>$22,950.52</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Toyota</td>
+  <td>Land Cruiser</td>
+  <td align=right>2008</td>
+  <td>Blue</td>
+  <td align=right>19654</td>
+  <td class=xl65 align=right>$14,702.09</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Volkswagen</td>
+  <td>Cabriolet</td>
+  <td align=right>1993</td>
+  <td>Yellow</td>
+  <td align=right>91292</td>
+  <td class=xl65 align=right>$28,283.71</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Pontiac</td>
+  <td>Grand Prix</td>
+  <td align=right>2006</td>
+  <td>Blue</td>
+  <td align=right>52880</td>
+  <td class=xl65 align=right>$44,825.62</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Mitsubishi</td>
+  <td>Mirage</td>
+  <td align=right>1984</td>
+  <td>Yellow</td>
+  <td align=right>1586</td>
+  <td class=xl65 align=right>$98,414.16</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Volkswagen</td>
+  <td>Tiguan</td>
+  <td align=right>2010</td>
+  <td>Mauv</td>
+  <td align=right>74529</td>
+  <td class=xl65 align=right>$79,765.63</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Volvo</td>
+  <td>V70</td>
+  <td align=right>2010</td>
+  <td>Teal</td>
+  <td align=right>22094</td>
+  <td class=xl65 align=right>$69,260.54</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Toyota</td>
+  <td>Supra</td>
+  <td align=right>1992</td>
+  <td>Teal</td>
+  <td align=right>76870</td>
+  <td class=xl65 align=right>$37,763.06</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Chevrolet</td>
+  <td>Prizm</td>
+  <td align=right>2001</td>
+  <td>Goldenrod</td>
+  <td align=right>189755</td>
+  <td class=xl65 align=right>$72,734.53</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Chrysler</td>
+  <td align=right>300</td>
+  <td align=right>2005</td>
+  <td>Goldenrod</td>
+  <td align=right>43496</td>
+  <td class=xl65 align=right>$44,259.78</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Plymouth</td>
+  <td>Neon</td>
+  <td align=right>1999</td>
+  <td>Orange</td>
+  <td align=right>111481</td>
+  <td class=xl65 align=right>$1,320.70</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>GMC</td>
+  <td>Yukon XL 2500</td>
+  <td align=right>2006</td>
+  <td>Maroon</td>
+  <td align=right>136795</td>
+  <td class=xl65 align=right>$90,144.37</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Mercury</td>
+  <td>Villager</td>
+  <td align=right>2002</td>
+  <td>Yellow</td>
+  <td align=right>41229</td>
+  <td class=xl65 align=right>$29,213.13</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Porsche</td>
+  <td>Boxster</td>
+  <td align=right>2010</td>
+  <td>Goldenrod</td>
+  <td align=right>52632</td>
+  <td class=xl65 align=right>$77,308.09</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Acura</td>
+  <td>MDX</td>
+  <td align=right>2011</td>
+  <td>Maroon</td>
+  <td align=right>193572</td>
+  <td class=xl65 align=right>$83,132.05</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Hyundai</td>
+  <td>Sonata</td>
+  <td align=right>1999</td>
+  <td>Teal</td>
+  <td align=right>154994</td>
+  <td class=xl65 align=right>$14,751.98</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>GMC</td>
+  <td>Savana 1500</td>
+  <td align=right>1996</td>
+  <td>Crimson</td>
+  <td align=right>61085</td>
+  <td class=xl65 align=right>$37,416.06</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>GMC</td>
+  <td>Yukon XL 1500</td>
+  <td align=right>2006</td>
+  <td>Orange</td>
+  <td align=right>86425</td>
+  <td class=xl65 align=right>$44,417.00</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Bentley</td>
+  <td>Azure</td>
+  <td align=right>2007</td>
+  <td>Teal</td>
+  <td align=right>168016</td>
+  <td class=xl65 align=right>$92,933.20</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Hyundai</td>
+  <td>Genesis</td>
+  <td align=right>2011</td>
+  <td>Maroon</td>
+  <td align=right>174267</td>
+  <td class=xl65 align=right>$82,527.19</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Audi</td>
+  <td>TT</td>
+  <td align=right>2006</td>
+  <td>Fuscia</td>
+  <td align=right>40344</td>
+  <td class=xl65 align=right>$69,274.97</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Pontiac</td>
+  <td>Bonneville</td>
+  <td align=right>2003</td>
+  <td>Turquoise</td>
+  <td align=right>133232</td>
+  <td class=xl65 align=right>$33,063.86</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Toyota</td>
+  <td>Yaris</td>
+  <td align=right>2010</td>
+  <td>Aquamarine</td>
+  <td align=right>40852</td>
+  <td class=xl65 align=right>$18,603.01</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Lexus</td>
+  <td>IS</td>
+  <td align=right>2005</td>
+  <td>Mauv</td>
+  <td align=right>94945</td>
+  <td class=xl65 align=right>$64,042.19</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Oldsmobile</td>
+  <td>Cutlass Supreme</td>
+  <td align=right>1997</td>
+  <td>Aquamarine</td>
+  <td align=right>49296</td>
+  <td class=xl65 align=right>$1,562.99</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Pontiac</td>
+  <td>Sunfire</td>
+  <td align=right>2000</td>
+  <td>Maroon</td>
+  <td align=right>10212</td>
+  <td class=xl65 align=right>$80,676.84</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Ford</td>
+  <td>Probe</td>
+  <td align=right>1996</td>
+  <td>Puce</td>
+  <td align=right>30463</td>
+  <td class=xl65 align=right>$74,607.46</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Ferrari</td>
+  <td>599 GTB Fiorano</td>
+  <td align=right>2010</td>
+  <td>Goldenrod</td>
+  <td align=right>92787</td>
+  <td class=xl65 align=right>$81,944.21</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Cadillac</td>
+  <td>XLR</td>
+  <td align=right>2008</td>
+  <td>Indigo</td>
+  <td align=right>65735</td>
+  <td class=xl65 align=right>$57,003.99</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Mercedes-Benz</td>
+  <td>CL-Class</td>
+  <td align=right>2003</td>
+  <td>Teal</td>
+  <td align=right>35094</td>
+  <td class=xl65 align=right>$95,567.43</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Dodge</td>
+  <td>Ram</td>
+  <td align=right>2007</td>
+  <td>Aquamarine</td>
+  <td align=right>109777</td>
+  <td class=xl65 align=right>$39,322.85</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Audi</td>
+  <td>A3</td>
+  <td align=right>2006</td>
+  <td>Green</td>
+  <td align=right>180797</td>
+  <td class=xl65 align=right>$25,538.90</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Dodge</td>
+  <td>Durango</td>
+  <td align=right>1998</td>
+  <td>Mauv</td>
+  <td align=right>39528</td>
+  <td class=xl65 align=right>$46,481.10</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Ford</td>
+  <td>Mustang</td>
+  <td align=right>1974</td>
+  <td>Teal</td>
+  <td align=right>193467</td>
+  <td class=xl65 align=right>$20,929.62</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>GMC</td>
+  <td align=right>2500</td>
+  <td align=right>1998</td>
+  <td>Aquamarine</td>
+  <td align=right>95549</td>
+  <td class=xl65 align=right>$54,225.23</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Toyota</td>
+  <td>FJ Cruiser</td>
+  <td align=right>2010</td>
+  <td>Yellow</td>
+  <td align=right>132581</td>
+  <td class=xl65 align=right>$53,849.99</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Pontiac</td>
+  <td>GTO</td>
+  <td align=right>1968</td>
+  <td>Yellow</td>
+  <td align=right>5383</td>
+  <td class=xl65 align=right>$70,099.13</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Toyota</td>
+  <td>Land Cruiser</td>
+  <td align=right>2011</td>
+  <td>Puce</td>
+  <td align=right>108700</td>
+  <td class=xl65 align=right>$64,402.47</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Cadillac</td>
+  <td>Brougham</td>
+  <td align=right>1992</td>
+  <td>Orange</td>
+  <td align=right>119013</td>
+  <td class=xl65 align=right>$73,850.40</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Honda</td>
+  <td>Accord</td>
+  <td align=right>1987</td>
+  <td>Pink</td>
+  <td align=right>175085</td>
+  <td class=xl65 align=right>$53,316.63</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Chrysler</td>
+  <td>Cirrus</td>
+  <td align=right>2000</td>
+  <td>Crimson</td>
+  <td align=right>122743</td>
+  <td class=xl65 align=right>$59,716.60</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Hyundai</td>
+  <td>Azera</td>
+  <td align=right>2012</td>
+  <td>Violet</td>
+  <td align=right>41463</td>
+  <td class=xl65 align=right>$39,917.37</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Mitsubishi</td>
+  <td>Montero</td>
+  <td align=right>2006</td>
+  <td>Green</td>
+  <td align=right>72874</td>
+  <td class=xl65 align=right>$49,767.05</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Ford</td>
+  <td>F250</td>
+  <td align=right>1992</td>
+  <td>Orange</td>
+  <td align=right>77900</td>
+  <td class=xl65 align=right>$49,049.71</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Ram</td>
+  <td>C/V</td>
+  <td align=right>2012</td>
+  <td>Indigo</td>
+  <td align=right>164670</td>
+  <td class=xl65 align=right>$95,141.01</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>GMC</td>
+  <td>Yukon XL 1500</td>
+  <td align=right>2004</td>
+  <td>Violet</td>
+  <td align=right>40773</td>
+  <td class=xl65 align=right>$98,540.02</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Isuzu</td>
+  <td>Hombre</td>
+  <td align=right>1996</td>
+  <td>Violet</td>
+  <td align=right>293</td>
+  <td class=xl65 align=right>$88,103.37</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Lexus</td>
+  <td>RX</td>
+  <td align=right>2002</td>
+  <td>Purple</td>
+  <td align=right>4560</td>
+  <td class=xl65 align=right>$27,319.90</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Subaru</td>
+  <td>Impreza</td>
+  <td align=right>2002</td>
+  <td>Violet</td>
+  <td align=right>66204</td>
+  <td class=xl65 align=right>$90,725.49</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Porsche</td>
+  <td>Boxster</td>
+  <td align=right>2000</td>
+  <td>Aquamarine</td>
+  <td align=right>57301</td>
+  <td class=xl65 align=right>$14,744.80</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>GMC</td>
+  <td>Yukon</td>
+  <td align=right>2008</td>
+  <td>Aquamarine</td>
+  <td align=right>165635</td>
+  <td class=xl65 align=right>$33,172.96</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Audi</td>
+  <td>A5</td>
+  <td align=right>2009</td>
+  <td>Orange</td>
+  <td align=right>87821</td>
+  <td class=xl65 align=right>$8,379.19</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>GMC</td>
+  <td>Savana 3500</td>
+  <td align=right>2003</td>
+  <td>Puce</td>
+  <td align=right>172616</td>
+  <td class=xl65 align=right>$28,264.13</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Lincoln</td>
+  <td>Navigator</td>
+  <td align=right>2010</td>
+  <td>Green</td>
+  <td align=right>129907</td>
+  <td class=xl65 align=right>$73,438.13</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Jeep</td>
+  <td>Cherokee</td>
+  <td align=right>2001</td>
+  <td>Blue</td>
+  <td align=right>27707</td>
+  <td class=xl65 align=right>$18,604.76</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Ford</td>
+  <td>F350</td>
+  <td align=right>1994</td>
+  <td>Mauv</td>
+  <td align=right>27379</td>
+  <td class=xl65 align=right>$72,581.18</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Volkswagen</td>
+  <td>Fox</td>
+  <td align=right>1987</td>
+  <td>Crimson</td>
+  <td align=right>11007</td>
+  <td class=xl65 align=right>$31,875.34</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Mitsubishi</td>
+  <td>GTO</td>
+  <td align=right>1998</td>
+  <td>Green</td>
+  <td align=right>34722</td>
+  <td class=xl65 align=right>$82,471.10</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Ford</td>
+  <td>Econoline E150</td>
+  <td align=right>1996</td>
+  <td>Khaki</td>
+  <td align=right>72535</td>
+  <td class=xl65 align=right>$30,865.27</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Suzuki</td>
+  <td>Daewoo Magnus</td>
+  <td align=right>2005</td>
+  <td>Mauv</td>
+  <td align=right>112148</td>
+  <td class=xl65 align=right>$76,803.18</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>GMC</td>
+  <td>Yukon XL 1500</td>
+  <td align=right>2005</td>
+  <td>Violet</td>
+  <td align=right>81227</td>
+  <td class=xl65 align=right>$47,028.06</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Mazda</td>
+  <td>MX-5</td>
+  <td align=right>2000</td>
+  <td>Purple</td>
+  <td align=right>131530</td>
+  <td class=xl65 align=right>$86,506.10</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Honda</td>
+  <td>CR-V</td>
+  <td align=right>2005</td>
+  <td>Yellow</td>
+  <td align=right>149836</td>
+  <td class=xl65 align=right>$97,802.51</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Honda</td>
+  <td>Prelude</td>
+  <td align=right>1985</td>
+  <td>Violet</td>
+  <td align=right>172043</td>
+  <td class=xl65 align=right>$70,043.16</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Mazda</td>
+  <td>Protege</td>
+  <td align=right>1994</td>
+  <td>Maroon</td>
+  <td align=right>132189</td>
+  <td class=xl65 align=right>$60,576.68</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Ford</td>
+  <td>GT500</td>
+  <td align=right>2007</td>
+  <td>Mauv</td>
+  <td align=right>65871</td>
+  <td class=xl65 align=right>$92,100.74</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Audi</td>
+  <td>Allroad</td>
+  <td align=right>2002</td>
+  <td>Yellow</td>
+  <td align=right>154438</td>
+  <td class=xl65 align=right>$90,762.34</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Mazda</td>
+  <td>Protege5</td>
+  <td align=right>2003</td>
+  <td>Green</td>
+  <td align=right>170609</td>
+  <td class=xl65 align=right>$70,405.22</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Dodge</td>
+  <td>Stratus</td>
+  <td align=right>2005</td>
+  <td>Violet</td>
+  <td align=right>121707</td>
+  <td class=xl65 align=right>$10,707.34</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Toyota</td>
+  <td>Highlander Hybrid</td>
+  <td align=right>2007</td>
+  <td>Red</td>
+  <td align=right>120194</td>
+  <td class=xl65 align=right>$14,399.15</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>GMC</td>
+  <td>Terrain</td>
+  <td align=right>2012</td>
+  <td>Violet</td>
+  <td align=right>52077</td>
+  <td class=xl65 align=right>$38,632.82</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Jeep</td>
+  <td>Cherokee</td>
+  <td align=right>2000</td>
+  <td>Puce</td>
+  <td align=right>10451</td>
+  <td class=xl65 align=right>$17,047.52</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Suzuki</td>
+  <td>Swift</td>
+  <td align=right>1997</td>
+  <td>Khaki</td>
+  <td align=right>134565</td>
+  <td class=xl65 align=right>$1,453.74</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Nissan</td>
+  <td>Altima</td>
+  <td align=right>2009</td>
+  <td>Teal</td>
+  <td align=right>152158</td>
+  <td class=xl65 align=right>$23,730.14</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Cadillac</td>
+  <td>Eldorado</td>
+  <td align=right>1996</td>
+  <td>Khaki</td>
+  <td align=right>153687</td>
+  <td class=xl65 align=right>$40,168.33</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Mitsubishi</td>
+  <td>Pajero</td>
+  <td align=right>2002</td>
+  <td>Blue</td>
+  <td align=right>87348</td>
+  <td class=xl65 align=right>$3,660.82</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Kia</td>
+  <td>Rio</td>
+  <td align=right>2007</td>
+  <td>Crimson</td>
+  <td align=right>169889</td>
+  <td class=xl65 align=right>$74,334.29</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Nissan</td>
+  <td>NX</td>
+  <td align=right>1993</td>
+  <td>Blue</td>
+  <td align=right>92020</td>
+  <td class=xl65 align=right>$67,417.07</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Toyota</td>
+  <td>MR2</td>
+  <td align=right>2001</td>
+  <td>Khaki</td>
+  <td align=right>6143</td>
+  <td class=xl65 align=right>$18,624.74</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Pontiac</td>
+  <td>Firebird</td>
+  <td align=right>1984</td>
+  <td>Khaki</td>
+  <td align=right>28846</td>
+  <td class=xl65 align=right>$27,270.36</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Saab</td>
+  <td align=right>900</td>
+  <td align=right>1987</td>
+  <td>Pink</td>
+  <td align=right>66385</td>
+  <td class=xl65 align=right>$86,697.00</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Mazda</td>
+  <td>Tribute</td>
+  <td align=right>2003</td>
+  <td>Goldenrod</td>
+  <td align=right>22398</td>
+  <td class=xl65 align=right>$37,651.61</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Volvo</td>
+  <td>XC70</td>
+  <td align=right>2007</td>
+  <td>Pink</td>
+  <td align=right>119091</td>
+  <td class=xl65 align=right>$86,358.16</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Pontiac</td>
+  <td>Firebird</td>
+  <td align=right>2001</td>
+  <td>Goldenrod</td>
+  <td align=right>115772</td>
+  <td class=xl65 align=right>$36,623.97</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Volkswagen</td>
+  <td>Cabriolet</td>
+  <td align=right>2002</td>
+  <td>Goldenrod</td>
+  <td align=right>66934</td>
+  <td class=xl65 align=right>$17,610.98</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Lincoln</td>
+  <td>Town Car</td>
+  <td align=right>1984</td>
+  <td>Teal</td>
+  <td align=right>164547</td>
+  <td class=xl65 align=right>$78,679.88</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Toyota</td>
+  <td>Camry</td>
+  <td align=right>1994</td>
+  <td>Mauv</td>
+  <td align=right>148790</td>
+  <td class=xl65 align=right>$81,834.91</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Suzuki</td>
+  <td>Aerio</td>
+  <td align=right>2004</td>
+  <td>Indigo</td>
+  <td align=right>173340</td>
+  <td class=xl65 align=right>$96,025.34</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Audi</td>
+  <td align=right>80</td>
+  <td align=right>1992</td>
+  <td>Violet</td>
+  <td align=right>197363</td>
+  <td class=xl65 align=right>$22,261.53</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Toyota</td>
+  <td>Highlander</td>
+  <td align=right>2009</td>
+  <td>Green</td>
+  <td align=right>120600</td>
+  <td class=xl65 align=right>$73,079.49</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Honda</td>
+  <td>CR-V</td>
+  <td align=right>1998</td>
+  <td>Maroon</td>
+  <td align=right>117372</td>
+  <td class=xl65 align=right>$97,629.07</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Mitsubishi</td>
+  <td>i-MiEV</td>
+  <td align=right>2012</td>
+  <td>Yellow</td>
+  <td align=right>15570</td>
+  <td class=xl65 align=right>$63,955.45</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Nissan</td>
+  <td>Maxima</td>
+  <td align=right>2008</td>
+  <td>Red</td>
+  <td align=right>128252</td>
+  <td class=xl65 align=right>$13,257.26</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Acura</td>
+  <td>ZDX</td>
+  <td align=right>2011</td>
+  <td>Yellow</td>
+  <td align=right>187192</td>
+  <td class=xl65 align=right>$72,197.92</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Mitsubishi</td>
+  <td>Chariot</td>
+  <td align=right>1986</td>
+  <td>Aquamarine</td>
+  <td align=right>184243</td>
+  <td class=xl65 align=right>$20,028.27</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Hyundai</td>
+  <td>Azera</td>
+  <td align=right>2009</td>
+  <td>Violet</td>
+  <td align=right>38128</td>
+  <td class=xl65 align=right>$60,204.95</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Chevrolet</td>
+  <td align=right>3500</td>
+  <td align=right>2000</td>
+  <td>Indigo</td>
+  <td align=right>167158</td>
+  <td class=xl65 align=right>$42,068.64</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Mercedes-Benz</td>
+  <td>600SEL</td>
+  <td align=right>1992</td>
+  <td>Maroon</td>
+  <td align=right>110335</td>
+  <td class=xl65 align=right>$54,487.80</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Ford</td>
+  <td>E-Series</td>
+  <td align=right>2005</td>
+  <td>Purple</td>
+  <td align=right>137725</td>
+  <td class=xl65 align=right>$52,895.47</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>GMC</td>
+  <td>Savana 1500</td>
+  <td align=right>2012</td>
+  <td>Teal</td>
+  <td align=right>119918</td>
+  <td class=xl65 align=right>$25,470.90</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Lincoln</td>
+  <td>Continental</td>
+  <td align=right>1996</td>
+  <td>Puce</td>
+  <td align=right>36916</td>
+  <td class=xl65 align=right>$21,208.83</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Mercedes-Benz</td>
+  <td>SL-Class</td>
+  <td align=right>1994</td>
+  <td>Purple</td>
+  <td align=right>90330</td>
+  <td class=xl65 align=right>$13,643.87</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Volkswagen</td>
+  <td>Cabriolet</td>
+  <td align=right>1986</td>
+  <td>Goldenrod</td>
+  <td align=right>115961</td>
+  <td class=xl65 align=right>$81,289.46</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Volkswagen</td>
+  <td>Golf</td>
+  <td align=right>1989</td>
+  <td>Purple</td>
+  <td align=right>76447</td>
+  <td class=xl65 align=right>$19,858.73</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Toyota</td>
+  <td>T100 Xtra</td>
+  <td align=right>1995</td>
+  <td>Puce</td>
+  <td align=right>65451</td>
+  <td class=xl65 align=right>$72,402.07</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Jeep</td>
+  <td>Wrangler</td>
+  <td align=right>2005</td>
+  <td>Puce</td>
+  <td align=right>133277</td>
+  <td class=xl65 align=right>$86,779.74</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Mazda</td>
+  <td>B2600</td>
+  <td align=right>1987</td>
+  <td>Green</td>
+  <td align=right>132643</td>
+  <td class=xl65 align=right>$93,303.67</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Bentley</td>
+  <td>Continental</td>
+  <td align=right>2010</td>
+  <td>Mauv</td>
+  <td align=right>34498</td>
+  <td class=xl65 align=right>$34,343.69</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Suzuki</td>
+  <td>Equator</td>
+  <td align=right>2011</td>
+  <td>Blue</td>
+  <td align=right>120631</td>
+  <td class=xl65 align=right>$21,415.90</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Nissan</td>
+  <td>Sentra</td>
+  <td align=right>1991</td>
+  <td>Maroon</td>
+  <td align=right>5000</td>
+  <td class=xl65 align=right>$14,011.63</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Chevrolet</td>
+  <td>Suburban 2500</td>
+  <td align=right>2007</td>
+  <td>Turquoise</td>
+  <td align=right>108366</td>
+  <td class=xl65 align=right>$11,610.77</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Toyota</td>
+  <td>TundraMax</td>
+  <td align=right>2011</td>
+  <td>Yellow</td>
+  <td align=right>57932</td>
+  <td class=xl65 align=right>$84,452.38</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Ford</td>
+  <td>Crown Victoria</td>
+  <td align=right>2008</td>
+  <td>Violet</td>
+  <td align=right>126113</td>
+  <td class=xl65 align=right>$58,673.47</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Infiniti</td>
+  <td>G</td>
+  <td align=right>1992</td>
+  <td>Puce</td>
+  <td align=right>12971</td>
+  <td class=xl65 align=right>$68,267.54</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Mercedes-Benz</td>
+  <td>SLR McLaren</td>
+  <td align=right>2006</td>
+  <td>Crimson</td>
+  <td align=right>179279</td>
+  <td class=xl65 align=right>$32,744.03</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Mazda</td>
+  <td>Miata MX-5</td>
+  <td align=right>2006</td>
+  <td>Turquoise</td>
+  <td align=right>159918</td>
+  <td class=xl65 align=right>$29,117.44</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Buick</td>
+  <td>Century</td>
+  <td align=right>1988</td>
+  <td>Turquoise</td>
+  <td align=right>43463</td>
+  <td class=xl65 align=right>$43,034.80</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Pontiac</td>
+  <td>Grand Prix</td>
+  <td align=right>1976</td>
+  <td>Purple</td>
+  <td align=right>99007</td>
+  <td class=xl65 align=right>$77,803.79</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Lamborghini</td>
+  <td>Diablo</td>
+  <td align=right>1995</td>
+  <td>Indigo</td>
+  <td align=right>136527</td>
+  <td class=xl65 align=right>$41,019.42</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Porsche</td>
+  <td align=right>928</td>
+  <td align=right>1993</td>
+  <td>Mauv</td>
+  <td align=right>111222</td>
+  <td class=xl65 align=right>$89,237.23</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Dodge</td>
+  <td>Ram Van 2500</td>
+  <td align=right>1998</td>
+  <td>Blue</td>
+  <td align=right>121889</td>
+  <td class=xl65 align=right>$73,575.59</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Chevrolet</td>
+  <td>Aveo</td>
+  <td align=right>2011</td>
+  <td>Crimson</td>
+  <td align=right>25131</td>
+  <td class=xl65 align=right>$40,196.12</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Chevrolet</td>
+  <td>Impala</td>
+  <td align=right>2006</td>
+  <td>Blue</td>
+  <td align=right>197897</td>
+  <td class=xl65 align=right>$59,403.01</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>GMC</td>
+  <td>Savana 3500</td>
+  <td align=right>2011</td>
+  <td>Maroon</td>
+  <td align=right>112347</td>
+  <td class=xl65 align=right>$52,448.20</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Subaru</td>
+  <td>XT</td>
+  <td align=right>1989</td>
+  <td>Maroon</td>
+  <td align=right>150001</td>
+  <td class=xl65 align=right>$67,859.06</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Lexus</td>
+  <td>SC</td>
+  <td align=right>1996</td>
+  <td>Blue</td>
+  <td align=right>139580</td>
+  <td class=xl65 align=right>$22,889.98</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>BMW</td>
+  <td align=right>525</td>
+  <td align=right>2002</td>
+  <td>Purple</td>
+  <td align=right>81870</td>
+  <td class=xl65 align=right>$12,378.00</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Buick</td>
+  <td>Coachbuilder</td>
+  <td align=right>1994</td>
+  <td>Green</td>
+  <td align=right>152674</td>
+  <td class=xl65 align=right>$59,061.81</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Lexus</td>
+  <td>LX</td>
+  <td align=right>2009</td>
+  <td>Maroon</td>
+  <td align=right>43891</td>
+  <td class=xl65 align=right>$89,065.19</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Cadillac</td>
+  <td>Fleetwood</td>
+  <td align=right>1994</td>
+  <td>Khaki</td>
+  <td align=right>24594</td>
+  <td class=xl65 align=right>$34,011.50</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Saab</td>
+  <td align=right>900</td>
+  <td align=right>1990</td>
+  <td>Indigo</td>
+  <td align=right>111725</td>
+  <td class=xl65 align=right>$51,010.10</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Mazda</td>
+  <td>RX-7</td>
+  <td align=right>1995</td>
+  <td>Red</td>
+  <td align=right>36766</td>
+  <td class=xl65 align=right>$3,734.68</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Cadillac</td>
+  <td>STS-V</td>
+  <td align=right>2008</td>
+  <td>Fuscia</td>
+  <td align=right>3085</td>
+  <td class=xl65 align=right>$49,469.87</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Chrysler</td>
+  <td align=right>200</td>
+  <td align=right>2012</td>
+  <td>Maroon</td>
+  <td align=right>74164</td>
+  <td class=xl65 align=right>$85,520.27</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Mercedes-Benz</td>
+  <td>SLK-Class</td>
+  <td align=right>1999</td>
+  <td>Indigo</td>
+  <td align=right>29935</td>
+  <td class=xl65 align=right>$69,861.42</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Kia</td>
+  <td>Rio</td>
+  <td align=right>2011</td>
+  <td>Goldenrod</td>
+  <td align=right>141300</td>
+  <td class=xl65 align=right>$28,762.31</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Aston Martin</td>
+  <td>Vantage</td>
+  <td align=right>2011</td>
+  <td>Maroon</td>
+  <td align=right>75237</td>
+  <td class=xl65 align=right>$11,483.33</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Jaguar</td>
+  <td>S-Type</td>
+  <td align=right>2003</td>
+  <td>Green</td>
+  <td align=right>87032</td>
+  <td class=xl65 align=right>$62,356.72</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Subaru</td>
+  <td>Forester</td>
+  <td align=right>2001</td>
+  <td>Yellow</td>
+  <td align=right>120069</td>
+  <td class=xl65 align=right>$33,787.00</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Mazda</td>
+  <td>B-Series</td>
+  <td align=right>1991</td>
+  <td>Puce</td>
+  <td align=right>44099</td>
+  <td class=xl65 align=right>$75,529.66</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Maybach</td>
+  <td align=right>57</td>
+  <td align=right>2004</td>
+  <td>Teal</td>
+  <td align=right>23525</td>
+  <td class=xl65 align=right>$75,369.07</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Buick</td>
+  <td>Rendezvous</td>
+  <td align=right>2007</td>
+  <td>Pink</td>
+  <td align=right>86581</td>
+  <td class=xl65 align=right>$87,039.71</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Lincoln</td>
+  <td>Town Car</td>
+  <td align=right>1992</td>
+  <td>Turquoise</td>
+  <td align=right>37944</td>
+  <td class=xl65 align=right>$98,861.54</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Mercury</td>
+  <td>Mystique</td>
+  <td align=right>1999</td>
+  <td>Pink</td>
+  <td align=right>199524</td>
+  <td class=xl65 align=right>$4,959.20</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Dodge</td>
+  <td>D150 Club</td>
+  <td align=right>1993</td>
+  <td>Aquamarine</td>
+  <td align=right>5550</td>
+  <td class=xl65 align=right>$74,925.95</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Tesla</td>
+  <td>Model S</td>
+  <td align=right>2012</td>
+  <td>Maroon</td>
+  <td align=right>108909</td>
+  <td class=xl65 align=right>$53,673.85</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Lexus</td>
+  <td>IS-F</td>
+  <td align=right>2008</td>
+  <td>Fuscia</td>
+  <td align=right>21086</td>
+  <td class=xl65 align=right>$11,035.32</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Nissan</td>
+  <td>Pathfinder</td>
+  <td align=right>2009</td>
+  <td>Turquoise</td>
+  <td align=right>50458</td>
+  <td class=xl65 align=right>$43,954.69</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Nissan</td>
+  <td>200SX</td>
+  <td align=right>1997</td>
+  <td>Yellow</td>
+  <td align=right>184273</td>
+  <td class=xl65 align=right>$97,380.28</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Chevrolet</td>
+  <td align=right>2500</td>
+  <td align=right>1993</td>
+  <td>Khaki</td>
+  <td align=right>21509</td>
+  <td class=xl65 align=right>$50,848.81</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Ford</td>
+  <td>Windstar</td>
+  <td align=right>2004</td>
+  <td>Crimson</td>
+  <td align=right>37886</td>
+  <td class=xl65 align=right>$53,859.26</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Kia</td>
+  <td>Sedona</td>
+  <td align=right>2004</td>
+  <td>Maroon</td>
+  <td align=right>65615</td>
+  <td class=xl65 align=right>$81,586.11</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Pontiac</td>
+  <td>Gemini</td>
+  <td align=right>1989</td>
+  <td>Turquoise</td>
+  <td align=right>58458</td>
+  <td class=xl65 align=right>$87,475.84</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Ford</td>
+  <td>Contour</td>
+  <td align=right>1999</td>
+  <td>Aquamarine</td>
+  <td align=right>44614</td>
+  <td class=xl65 align=right>$68,191.96</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Suzuki</td>
+  <td>Daewoo Lacetti</td>
+  <td align=right>2006</td>
+  <td>Red</td>
+  <td align=right>4372</td>
+  <td class=xl65 align=right>$9,578.41</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Mitsubishi</td>
+  <td>Truck</td>
+  <td align=right>1987</td>
+  <td>Turquoise</td>
+  <td align=right>184188</td>
+  <td class=xl65 align=right>$81,269.62</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Ford</td>
+  <td>EXP</td>
+  <td align=right>1985</td>
+  <td>Red</td>
+  <td align=right>153765</td>
+  <td class=xl65 align=right>$24,076.95</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Lexus</td>
+  <td>GX</td>
+  <td align=right>2008</td>
+  <td>Mauv</td>
+  <td align=right>164172</td>
+  <td class=xl65 align=right>$62,015.68</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Volkswagen</td>
+  <td>Touareg</td>
+  <td align=right>2011</td>
+  <td>Turquoise</td>
+  <td align=right>150142</td>
+  <td class=xl65 align=right>$67,536.31</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Lexus</td>
+  <td>RX</td>
+  <td align=right>2003</td>
+  <td>Crimson</td>
+  <td align=right>182549</td>
+  <td class=xl65 align=right>$77,836.56</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Volkswagen</td>
+  <td>Passat</td>
+  <td align=right>2012</td>
+  <td>Aquamarine</td>
+  <td align=right>130966</td>
+  <td class=xl65 align=right>$77,115.75</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Mitsubishi</td>
+  <td>Galant</td>
+  <td align=right>1986</td>
+  <td>Crimson</td>
+  <td align=right>129395</td>
+  <td class=xl65 align=right>$70,284.44</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Buick</td>
+  <td>Skylark</td>
+  <td align=right>1994</td>
+  <td>Orange</td>
+  <td align=right>46294</td>
+  <td class=xl65 align=right>$75,001.49</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>GMC</td>
+  <td>3500 Club Coupe</td>
+  <td align=right>1992</td>
+  <td>Green</td>
+  <td align=right>64791</td>
+  <td class=xl65 align=right>$69,893.78</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Saab</td>
+  <td align=right>900</td>
+  <td align=right>1987</td>
+  <td>Red</td>
+  <td align=right>81331</td>
+  <td class=xl65 align=right>$3,599.91</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Ford</td>
+  <td>E150</td>
+  <td align=right>2009</td>
+  <td>Khaki</td>
+  <td align=right>59547</td>
+  <td class=xl65 align=right>$79,560.33</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Volvo</td>
+  <td align=right>960</td>
+  <td align=right>1994</td>
+  <td>Fuscia</td>
+  <td align=right>198998</td>
+  <td class=xl65 align=right>$91,173.67</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Jeep</td>
+  <td>Commander</td>
+  <td align=right>2008</td>
+  <td>Yellow</td>
+  <td align=right>190926</td>
+  <td class=xl65 align=right>$68,950.65</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Dodge</td>
+  <td>Grand Caravan</td>
+  <td align=right>2003</td>
+  <td>Crimson</td>
+  <td align=right>116331</td>
+  <td class=xl65 align=right>$27,183.12</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Lamborghini</td>
+  <td>Diablo</td>
+  <td align=right>1992</td>
+  <td>Purple</td>
+  <td align=right>23125</td>
+  <td class=xl65 align=right>$25,354.96</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Volkswagen</td>
+  <td>Eos</td>
+  <td align=right>2007</td>
+  <td>Goldenrod</td>
+  <td align=right>116054</td>
+  <td class=xl65 align=right>$49,594.27</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Plymouth</td>
+  <td>Colt</td>
+  <td align=right>1992</td>
+  <td>Khaki</td>
+  <td align=right>173458</td>
+  <td class=xl65 align=right>$31,685.49</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Dodge</td>
+  <td>Dynasty</td>
+  <td align=right>1992</td>
+  <td>Fuscia</td>
+  <td align=right>51591</td>
+  <td class=xl65 align=right>$66,628.67</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Lamborghini</td>
+  <td>Gallardo</td>
+  <td align=right>2004</td>
+  <td>Orange</td>
+  <td align=right>414</td>
+  <td class=xl65 align=right>$92,950.02</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>GMC</td>
+  <td>Savana</td>
+  <td align=right>2010</td>
+  <td>Green</td>
+  <td align=right>162943</td>
+  <td class=xl65 align=right>$83,728.75</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Lexus</td>
+  <td>LS Hybrid</td>
+  <td align=right>2010</td>
+  <td>Turquoise</td>
+  <td align=right>133776</td>
+  <td class=xl65 align=right>$14,344.33</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Honda</td>
+  <td>Element</td>
+  <td align=right>2008</td>
+  <td>Mauv</td>
+  <td align=right>123838</td>
+  <td class=xl65 align=right>$24,664.13</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Mitsubishi</td>
+  <td>GTO</td>
+  <td align=right>1999</td>
+  <td>Puce</td>
+  <td align=right>91950</td>
+  <td class=xl65 align=right>$12,912.30</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Lincoln</td>
+  <td>Aviator</td>
+  <td align=right>2005</td>
+  <td>Pink</td>
+  <td align=right>172723</td>
+  <td class=xl65 align=right>$2,735.70</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Aston Martin</td>
+  <td>DB9</td>
+  <td align=right>2006</td>
+  <td>Orange</td>
+  <td align=right>18864</td>
+  <td class=xl65 align=right>$79,464.59</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Plymouth</td>
+  <td>Voyager</td>
+  <td align=right>1993</td>
+  <td>Blue</td>
+  <td align=right>51501</td>
+  <td class=xl65 align=right>$44,239.95</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>BMW</td>
+  <td>Z3</td>
+  <td align=right>2000</td>
+  <td>Indigo</td>
+  <td align=right>2924</td>
+  <td class=xl65 align=right>$68,170.88</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Nissan</td>
+  <td>Maxima</td>
+  <td align=right>2012</td>
+  <td>Red</td>
+  <td align=right>172681</td>
+  <td class=xl65 align=right>$91,429.10</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Mazda</td>
+  <td align=right>626</td>
+  <td align=right>1993</td>
+  <td>Purple</td>
+  <td align=right>188691</td>
+  <td class=xl65 align=right>$95,640.05</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Kia</td>
+  <td>Optima</td>
+  <td align=right>2003</td>
+  <td>Khaki</td>
+  <td align=right>187536</td>
+  <td class=xl65 align=right>$27,626.47</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Honda</td>
+  <td>Passport</td>
+  <td align=right>1995</td>
+  <td>Red</td>
+  <td align=right>125358</td>
+  <td class=xl65 align=right>$17,300.05</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Dodge</td>
+  <td>Sprinter</td>
+  <td align=right>2006</td>
+  <td>Yellow</td>
+  <td align=right>29607</td>
+  <td class=xl65 align=right>$82,891.27</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Lexus</td>
+  <td>GS</td>
+  <td align=right>2003</td>
+  <td>Violet</td>
+  <td align=right>175713</td>
+  <td class=xl65 align=right>$75,229.94</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Lincoln</td>
+  <td>Town Car</td>
+  <td align=right>2005</td>
+  <td>Yellow</td>
+  <td align=right>80433</td>
+  <td class=xl65 align=right>$19,584.07</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Volvo</td>
+  <td>XC90</td>
+  <td align=right>2010</td>
+  <td>Violet</td>
+  <td align=right>96206</td>
+  <td class=xl65 align=right>$72,500.00</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Chevrolet</td>
+  <td>Prizm</td>
+  <td align=right>1999</td>
+  <td>Green</td>
+  <td align=right>182515</td>
+  <td class=xl65 align=right>$40,698.89</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Chevrolet</td>
+  <td>Traverse</td>
+  <td align=right>2011</td>
+  <td>Orange</td>
+  <td align=right>117100</td>
+  <td class=xl65 align=right>$34,521.40</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Chevrolet</td>
+  <td>Silverado Hybrid</td>
+  <td align=right>2006</td>
+  <td>Teal</td>
+  <td align=right>169705</td>
+  <td class=xl65 align=right>$6,025.02</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Oldsmobile</td>
+  <td align=right>98</td>
+  <td align=right>1995</td>
+  <td>Red</td>
+  <td align=right>87304</td>
+  <td class=xl65 align=right>$90,230.22</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Buick</td>
+  <td>Lucerne</td>
+  <td align=right>2008</td>
+  <td>Violet</td>
+  <td align=right>195519</td>
+  <td class=xl65 align=right>$63,581.45</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Honda</td>
+  <td>Accord</td>
+  <td align=right>1995</td>
+  <td>Teal</td>
+  <td align=right>22127</td>
+  <td class=xl65 align=right>$41,065.34</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Buick</td>
+  <td>Riviera</td>
+  <td align=right>1985</td>
+  <td>Violet</td>
+  <td align=right>155145</td>
+  <td class=xl65 align=right>$78,776.27</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Chrysler</td>
+  <td>PT Cruiser</td>
+  <td align=right>2008</td>
+  <td>Khaki</td>
+  <td align=right>109852</td>
+  <td class=xl65 align=right>$39,014.49</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Aston Martin</td>
+  <td>Vantage</td>
+  <td align=right>2007</td>
+  <td>Yellow</td>
+  <td align=right>42</td>
+  <td class=xl65 align=right>$38,769.21</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Chrysler</td>
+  <td>Town &amp; Country</td>
+  <td align=right>2008</td>
+  <td>Mauv</td>
+  <td align=right>26213</td>
+  <td class=xl65 align=right>$47,518.96</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Lexus</td>
+  <td>CT</td>
+  <td align=right>2011</td>
+  <td>Purple</td>
+  <td align=right>151587</td>
+  <td class=xl65 align=right>$38,306.75</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>GMC</td>
+  <td>Safari</td>
+  <td align=right>1998</td>
+  <td>Violet</td>
+  <td align=right>26731</td>
+  <td class=xl65 align=right>$46,992.85</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Mitsubishi</td>
+  <td>Eclipse</td>
+  <td align=right>1990</td>
+  <td>Khaki</td>
+  <td align=right>134115</td>
+  <td class=xl65 align=right>$24,155.32</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Volkswagen</td>
+  <td>Eos</td>
+  <td align=right>2010</td>
+  <td>Orange</td>
+  <td align=right>135220</td>
+  <td class=xl65 align=right>$56,740.86</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>GMC</td>
+  <td>Savana 2500</td>
+  <td align=right>1998</td>
+  <td>Yellow</td>
+  <td align=right>180961</td>
+  <td class=xl65 align=right>$51,182.45</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Volvo</td>
+  <td>XC70</td>
+  <td align=right>2005</td>
+  <td>Fuscia</td>
+  <td align=right>45989</td>
+  <td class=xl65 align=right>$6,377.90</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Bentley</td>
+  <td>Continental</td>
+  <td align=right>2009</td>
+  <td>Turquoise</td>
+  <td align=right>102439</td>
+  <td class=xl65 align=right>$5,356.57</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Porsche</td>
+  <td align=right>928</td>
+  <td align=right>1986</td>
+  <td>Blue</td>
+  <td align=right>78992</td>
+  <td class=xl65 align=right>$38,025.15</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Ford</td>
+  <td>Econoline E150</td>
+  <td align=right>1994</td>
+  <td>Orange</td>
+  <td align=right>130083</td>
+  <td class=xl65 align=right>$29,401.87</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>GMC</td>
+  <td>Savana 2500</td>
+  <td align=right>1998</td>
+  <td>Puce</td>
+  <td align=right>24875</td>
+  <td class=xl65 align=right>$11,687.56</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Toyota</td>
+  <td>Tacoma</td>
+  <td align=right>1995</td>
+  <td>Purple</td>
+  <td align=right>8626</td>
+  <td class=xl65 align=right>$2,438.62</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Mitsubishi</td>
+  <td>Precis</td>
+  <td align=right>1986</td>
+  <td>Pink</td>
+  <td align=right>72481</td>
+  <td class=xl65 align=right>$12,728.51</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Audi</td>
+  <td>Quattro</td>
+  <td align=right>1993</td>
+  <td>Maroon</td>
+  <td align=right>48740</td>
+  <td class=xl65 align=right>$45,865.50</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Ford</td>
+  <td>Excursion</td>
+  <td align=right>2002</td>
+  <td>Mauv</td>
+  <td align=right>90118</td>
+  <td class=xl65 align=right>$6,167.52</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Eagle</td>
+  <td>Vision</td>
+  <td align=right>1995</td>
+  <td>Fuscia</td>
+  <td align=right>152332</td>
+  <td class=xl65 align=right>$20,109.45</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Volkswagen</td>
+  <td>Type 2</td>
+  <td align=right>1990</td>
+  <td>Goldenrod</td>
+  <td align=right>113110</td>
+  <td class=xl65 align=right>$57,989.45</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Jeep</td>
+  <td>Wrangler</td>
+  <td align=right>2008</td>
+  <td>Mauv</td>
+  <td align=right>127641</td>
+  <td class=xl65 align=right>$45,593.72</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Mitsubishi</td>
+  <td>Eclipse</td>
+  <td align=right>1997</td>
+  <td>Maroon</td>
+  <td align=right>107064</td>
+  <td class=xl65 align=right>$35,605.29</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Mercury</td>
+  <td>Capri</td>
+  <td align=right>1993</td>
+  <td>Blue</td>
+  <td align=right>193897</td>
+  <td class=xl65 align=right>$72,264.43</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Mercury</td>
+  <td>Grand Marquis</td>
+  <td align=right>2008</td>
+  <td>Fuscia</td>
+  <td align=right>121507</td>
+  <td class=xl65 align=right>$40,662.29</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>GMC</td>
+  <td>Savana 3500</td>
+  <td align=right>1999</td>
+  <td>Maroon</td>
+  <td align=right>16993</td>
+  <td class=xl65 align=right>$17,085.98</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Ford</td>
+  <td>Focus ST</td>
+  <td align=right>2013</td>
+  <td>Teal</td>
+  <td align=right>24850</td>
+  <td class=xl65 align=right>$18,956.11</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Porsche</td>
+  <td align=right>968</td>
+  <td align=right>1992</td>
+  <td>Purple</td>
+  <td align=right>159043</td>
+  <td class=xl65 align=right>$96,884.64</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Lexus</td>
+  <td>GS</td>
+  <td align=right>2007</td>
+  <td>Violet</td>
+  <td align=right>154592</td>
+  <td class=xl65 align=right>$64,466.90</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Audi</td>
+  <td>A3</td>
+  <td align=right>2011</td>
+  <td>Violet</td>
+  <td align=right>125962</td>
+  <td class=xl65 align=right>$67,961.98</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Hyundai</td>
+  <td>Sonata</td>
+  <td align=right>2004</td>
+  <td>Green</td>
+  <td align=right>180368</td>
+  <td class=xl65 align=right>$45,375.64</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>BMW</td>
+  <td>5 Series</td>
+  <td align=right>2011</td>
+  <td>Red</td>
+  <td align=right>11868</td>
+  <td class=xl65 align=right>$69,723.94</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Suzuki</td>
+  <td>Daewoo Magnus</td>
+  <td align=right>2006</td>
+  <td>Indigo</td>
+  <td align=right>183019</td>
+  <td class=xl65 align=right>$56,209.24</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Suzuki</td>
+  <td>Forenza</td>
+  <td align=right>2004</td>
+  <td>Crimson</td>
+  <td align=right>10750</td>
+  <td class=xl65 align=right>$18,824.11</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Volkswagen</td>
+  <td>Rabbit</td>
+  <td align=right>2010</td>
+  <td>Khaki</td>
+  <td align=right>168973</td>
+  <td class=xl65 align=right>$48,472.65</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Lincoln</td>
+  <td>Continental</td>
+  <td align=right>1993</td>
+  <td>Goldenrod</td>
+  <td align=right>90001</td>
+  <td class=xl65 align=right>$82,432.91</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>BMW</td>
+  <td>3 Series</td>
+  <td align=right>1997</td>
+  <td>Pink</td>
+  <td align=right>90595</td>
+  <td class=xl65 align=right>$86,062.24</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Ford</td>
+  <td>F-Series Super Duty</td>
+  <td align=right>2007</td>
+  <td>Puce</td>
+  <td align=right>19503</td>
+  <td class=xl65 align=right>$16,876.94</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Lincoln</td>
+  <td>Continental Mark VII</td>
+  <td align=right>1986</td>
+  <td>Yellow</td>
+  <td align=right>77555</td>
+  <td class=xl65 align=right>$73,260.31</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Mitsubishi</td>
+  <td>Eclipse</td>
+  <td align=right>1996</td>
+  <td>Crimson</td>
+  <td align=right>161863</td>
+  <td class=xl65 align=right>$63,925.37</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Audi</td>
+  <td>A6</td>
+  <td align=right>1997</td>
+  <td>Purple</td>
+  <td align=right>94428</td>
+  <td class=xl65 align=right>$35,538.98</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Mazda</td>
+  <td>RX-7</td>
+  <td align=right>1995</td>
+  <td>Mauv</td>
+  <td align=right>125709</td>
+  <td class=xl65 align=right>$51,574.08</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Dodge</td>
+  <td>Dakota</td>
+  <td align=right>2008</td>
+  <td>Maroon</td>
+  <td align=right>198283</td>
+  <td class=xl65 align=right>$21,739.03</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Jeep</td>
+  <td>Grand Cherokee</td>
+  <td align=right>1997</td>
+  <td>Maroon</td>
+  <td align=right>107637</td>
+  <td class=xl65 align=right>$4,219.13</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>GMC</td>
+  <td>Yukon XL 2500</td>
+  <td align=right>2011</td>
+  <td>Puce</td>
+  <td align=right>133524</td>
+  <td class=xl65 align=right>$25,843.27</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Mazda</td>
+  <td>B-Series Plus</td>
+  <td align=right>2002</td>
+  <td>Pink</td>
+  <td align=right>70904</td>
+  <td class=xl65 align=right>$8,979.50</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Mazda</td>
+  <td>Mazdaspeed 3</td>
+  <td align=right>2011</td>
+  <td>Fuscia</td>
+  <td align=right>88919</td>
+  <td class=xl65 align=right>$15,059.25</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>GMC</td>
+  <td>Savana</td>
+  <td align=right>2007</td>
+  <td>Red</td>
+  <td align=right>105919</td>
+  <td class=xl65 align=right>$45,628.73</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Mercury</td>
+  <td>Villager</td>
+  <td align=right>2001</td>
+  <td>Violet</td>
+  <td align=right>71162</td>
+  <td class=xl65 align=right>$85,604.60</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Mitsubishi</td>
+  <td>Montero Sport</td>
+  <td align=right>2003</td>
+  <td>Goldenrod</td>
+  <td align=right>89207</td>
+  <td class=xl65 align=right>$32,719.87</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Ford</td>
+  <td>Focus</td>
+  <td align=right>2010</td>
+  <td>Green</td>
+  <td align=right>14281</td>
+  <td class=xl65 align=right>$46,739.05</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Hyundai</td>
+  <td>Elantra</td>
+  <td align=right>2004</td>
+  <td>Green</td>
+  <td align=right>42713</td>
+  <td class=xl65 align=right>$12,921.28</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Toyota</td>
+  <td>Camry</td>
+  <td align=right>2012</td>
+  <td>Violet</td>
+  <td align=right>32890</td>
+  <td class=xl65 align=right>$1,615.65</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Dodge</td>
+  <td>Ram Van 1500</td>
+  <td align=right>1999</td>
+  <td>Aquamarine</td>
+  <td align=right>143900</td>
+  <td class=xl65 align=right>$50,673.67</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Mitsubishi</td>
+  <td>Eclipse</td>
+  <td align=right>2005</td>
+  <td>Red</td>
+  <td align=right>54396</td>
+  <td class=xl65 align=right>$60,892.17</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Chevrolet</td>
+  <td>Corvette</td>
+  <td align=right>1959</td>
+  <td>Green</td>
+  <td align=right>89466</td>
+  <td class=xl65 align=right>$82,994.25</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Audi</td>
+  <td>S6</td>
+  <td align=right>2010</td>
+  <td>Red</td>
+  <td align=right>9572</td>
+  <td class=xl65 align=right>$97,820.77</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Chrysler</td>
+  <td>Voyager</td>
+  <td align=right>2002</td>
+  <td>Khaki</td>
+  <td align=right>9212</td>
+  <td class=xl65 align=right>$40,551.61</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Cadillac</td>
+  <td>SRX</td>
+  <td align=right>2006</td>
+  <td>Khaki</td>
+  <td align=right>3383</td>
+  <td class=xl65 align=right>$33,145.23</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Cadillac</td>
+  <td>Escalade EXT</td>
+  <td align=right>2008</td>
+  <td>Fuscia</td>
+  <td align=right>67486</td>
+  <td class=xl65 align=right>$6,756.64</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Mitsubishi</td>
+  <td>Outlander</td>
+  <td align=right>2010</td>
+  <td>Orange</td>
+  <td align=right>128526</td>
+  <td class=xl65 align=right>$22,333.00</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Land Rover</td>
+  <td>Range Rover</td>
+  <td align=right>2012</td>
+  <td>Turquoise</td>
+  <td align=right>151647</td>
+  <td class=xl65 align=right>$73,585.46</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>BMW</td>
+  <td align=right>530</td>
+  <td align=right>2005</td>
+  <td>Orange</td>
+  <td align=right>116035</td>
+  <td class=xl65 align=right>$43,587.52</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Lincoln</td>
+  <td>Continental</td>
+  <td align=right>1987</td>
+  <td>Fuscia</td>
+  <td align=right>195064</td>
+  <td class=xl65 align=right>$18,902.98</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Jaguar</td>
+  <td>XJ Series</td>
+  <td align=right>1999</td>
+  <td>Orange</td>
+  <td align=right>21480</td>
+  <td class=xl65 align=right>$10,445.61</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Lotus</td>
+  <td>Elise</td>
+  <td align=right>2005</td>
+  <td>Turquoise</td>
+  <td align=right>47372</td>
+  <td class=xl65 align=right>$70,591.97</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Mitsubishi</td>
+  <td>Excel</td>
+  <td align=right>1987</td>
+  <td>Maroon</td>
+  <td align=right>46406</td>
+  <td class=xl65 align=right>$50,205.24</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Pontiac</td>
+  <td>Vibe</td>
+  <td align=right>2007</td>
+  <td>Pink</td>
+  <td align=right>80846</td>
+  <td class=xl65 align=right>$80,376.99</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Buick</td>
+  <td>Lucerne</td>
+  <td align=right>2011</td>
+  <td>Yellow</td>
+  <td align=right>187211</td>
+  <td class=xl65 align=right>$85,073.00</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Mazda</td>
+  <td>RX-8</td>
+  <td align=right>2004</td>
+  <td>Violet</td>
+  <td align=right>35225</td>
+  <td class=xl65 align=right>$18,023.48</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Buick</td>
+  <td>Coachbuilder</td>
+  <td align=right>1991</td>
+  <td>Green</td>
+  <td align=right>73202</td>
+  <td class=xl65 align=right>$93,910.63</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Ford</td>
+  <td>Windstar</td>
+  <td align=right>2004</td>
+  <td>Fuscia</td>
+  <td align=right>32228</td>
+  <td class=xl65 align=right>$7,163.10</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Lotus</td>
+  <td>Exige</td>
+  <td align=right>2006</td>
+  <td>Blue</td>
+  <td align=right>162336</td>
+  <td class=xl65 align=right>$7,644.16</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Oldsmobile</td>
+  <td>Intrigue</td>
+  <td align=right>2000</td>
+  <td>Maroon</td>
+  <td align=right>91063</td>
+  <td class=xl65 align=right>$27,298.84</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Dodge</td>
+  <td>Dakota Club</td>
+  <td align=right>2002</td>
+  <td>Red</td>
+  <td align=right>42519</td>
+  <td class=xl65 align=right>$59,940.76</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>GMC</td>
+  <td>Sonoma Club Coupe</td>
+  <td align=right>1995</td>
+  <td>Pink</td>
+  <td align=right>58876</td>
+  <td class=xl65 align=right>$84,283.09</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Saab</td>
+  <td class=xl66 align=right>9-May</td>
+  <td align=right>2002</td>
+  <td>Fuscia</td>
+  <td align=right>11526</td>
+  <td class=xl65 align=right>$89,652.46</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Chevrolet</td>
+  <td>Monte Carlo</td>
+  <td align=right>1998</td>
+  <td>Fuscia</td>
+  <td align=right>107139</td>
+  <td class=xl65 align=right>$21,125.27</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Ford</td>
+  <td>Flex</td>
+  <td align=right>2012</td>
+  <td>Crimson</td>
+  <td align=right>112467</td>
+  <td class=xl65 align=right>$71,634.04</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>BMW</td>
+  <td>5 Series</td>
+  <td align=right>2003</td>
+  <td>Goldenrod</td>
+  <td align=right>165817</td>
+  <td class=xl65 align=right>$3,742.74</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Dodge</td>
+  <td>Shadow</td>
+  <td align=right>1992</td>
+  <td>Pink</td>
+  <td align=right>152681</td>
+  <td class=xl65 align=right>$15,221.22</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Nissan</td>
+  <td>370Z</td>
+  <td align=right>2009</td>
+  <td>Puce</td>
+  <td align=right>85050</td>
+  <td class=xl65 align=right>$99,949.89</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Nissan</td>
+  <td>Xterra</td>
+  <td align=right>2004</td>
+  <td>Red</td>
+  <td align=right>95339</td>
+  <td class=xl65 align=right>$9,170.42</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Mazda</td>
+  <td align=right>626</td>
+  <td align=right>1998</td>
+  <td>Fuscia</td>
+  <td align=right>87720</td>
+  <td class=xl65 align=right>$44,531.08</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Volkswagen</td>
+  <td>Passat</td>
+  <td align=right>2005</td>
+  <td>Yellow</td>
+  <td align=right>23973</td>
+  <td class=xl65 align=right>$32,079.71</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Porsche</td>
+  <td>Boxster</td>
+  <td align=right>2000</td>
+  <td>Goldenrod</td>
+  <td align=right>42636</td>
+  <td class=xl65 align=right>$38,254.57</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Ford</td>
+  <td>Taurus</td>
+  <td align=right>1994</td>
+  <td>Purple</td>
+  <td align=right>5933</td>
+  <td class=xl65 align=right>$29,061.42</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Toyota</td>
+  <td>Tundra</td>
+  <td align=right>2010</td>
+  <td>Violet</td>
+  <td align=right>82734</td>
+  <td class=xl65 align=right>$61,013.98</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Mazda</td>
+  <td>Millenia</td>
+  <td align=right>1997</td>
+  <td>Yellow</td>
+  <td align=right>123872</td>
+  <td class=xl65 align=right>$91,235.03</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Mitsubishi</td>
+  <td>Eclipse</td>
+  <td align=right>1999</td>
+  <td>Pink</td>
+  <td align=right>163078</td>
+  <td class=xl65 align=right>$71,737.97</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Mitsubishi</td>
+  <td>Chariot</td>
+  <td align=right>1985</td>
+  <td>Blue</td>
+  <td align=right>89317</td>
+  <td class=xl65 align=right>$43,472.51</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>GMC</td>
+  <td>Terrain</td>
+  <td align=right>2011</td>
+  <td>Violet</td>
+  <td align=right>198489</td>
+  <td class=xl65 align=right>$93,960.19</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Chevrolet</td>
+  <td>Corvette</td>
+  <td align=right>1964</td>
+  <td>Crimson</td>
+  <td align=right>30702</td>
+  <td class=xl65 align=right>$86,234.16</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Pontiac</td>
+  <td align=right>1000</td>
+  <td align=right>1985</td>
+  <td>Yellow</td>
+  <td align=right>30230</td>
+  <td class=xl65 align=right>$42,213.78</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Suzuki</td>
+  <td>Swift</td>
+  <td align=right>1987</td>
+  <td>Goldenrod</td>
+  <td align=right>191815</td>
+  <td class=xl65 align=right>$33,291.14</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Infiniti</td>
+  <td>Q</td>
+  <td align=right>2005</td>
+  <td>Blue</td>
+  <td align=right>13732</td>
+  <td class=xl65 align=right>$12,089.64</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Honda</td>
+  <td>Accord</td>
+  <td align=right>1988</td>
+  <td>Goldenrod</td>
+  <td align=right>55933</td>
+  <td class=xl65 align=right>$31,759.73</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Jeep</td>
+  <td>Grand Cherokee</td>
+  <td align=right>2001</td>
+  <td>Violet</td>
+  <td align=right>196484</td>
+  <td class=xl65 align=right>$39,376.34</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>GMC</td>
+  <td>Sierra 3500</td>
+  <td align=right>2006</td>
+  <td>Mauv</td>
+  <td align=right>4304</td>
+  <td class=xl65 align=right>$52,376.71</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Oldsmobile</td>
+  <td>Silhouette</td>
+  <td align=right>1998</td>
+  <td>Green</td>
+  <td align=right>199027</td>
+  <td class=xl65 align=right>$24,791.76</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Ford</td>
+  <td>Freestyle</td>
+  <td align=right>2007</td>
+  <td>Mauv</td>
+  <td align=right>93516</td>
+  <td class=xl65 align=right>$41,702.08</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Kia</td>
+  <td>Rio</td>
+  <td align=right>2010</td>
+  <td>Teal</td>
+  <td align=right>145452</td>
+  <td class=xl65 align=right>$24,175.46</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Dodge</td>
+  <td>Viper</td>
+  <td align=right>2008</td>
+  <td>Khaki</td>
+  <td align=right>172834</td>
+  <td class=xl65 align=right>$81,926.55</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>GMC</td>
+  <td align=right>2500</td>
+  <td align=right>1997</td>
+  <td>Crimson</td>
+  <td align=right>171049</td>
+  <td class=xl65 align=right>$57,864.40</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Volvo</td>
+  <td>V40</td>
+  <td align=right>2000</td>
+  <td>Maroon</td>
+  <td align=right>109229</td>
+  <td class=xl65 align=right>$25,914.33</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Kia</td>
+  <td>Sorento</td>
+  <td align=right>2006</td>
+  <td>Teal</td>
+  <td align=right>126146</td>
+  <td class=xl65 align=right>$26,698.71</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Pontiac</td>
+  <td>Trans Sport</td>
+  <td align=right>1998</td>
+  <td>Teal</td>
+  <td align=right>145035</td>
+  <td class=xl65 align=right>$10,740.05</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Pontiac</td>
+  <td>Sunfire</td>
+  <td align=right>1998</td>
+  <td>Teal</td>
+  <td align=right>91599</td>
+  <td class=xl65 align=right>$29,895.72</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Mazda</td>
+  <td>B-Series Plus</td>
+  <td align=right>1998</td>
+  <td>Pink</td>
+  <td align=right>12276</td>
+  <td class=xl65 align=right>$55,429.30</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Pontiac</td>
+  <td>Grand Am</td>
+  <td align=right>1999</td>
+  <td>Teal</td>
+  <td align=right>148161</td>
+  <td class=xl65 align=right>$22,297.37</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Volkswagen</td>
+  <td>R32</td>
+  <td align=right>2008</td>
+  <td>Maroon</td>
+  <td align=right>125796</td>
+  <td class=xl65 align=right>$46,585.28</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Austin</td>
+  <td>Mini</td>
+  <td align=right>1963</td>
+  <td>Aquamarine</td>
+  <td align=right>156609</td>
+  <td class=xl65 align=right>$36,777.32</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Toyota</td>
+  <td>Camry</td>
+  <td align=right>2012</td>
+  <td>Orange</td>
+  <td align=right>141846</td>
+  <td class=xl65 align=right>$90,380.24</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Infiniti</td>
+  <td>Q</td>
+  <td align=right>2004</td>
+  <td>Khaki</td>
+  <td align=right>137175</td>
+  <td class=xl65 align=right>$5,299.16</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Honda</td>
+  <td>Accord</td>
+  <td align=right>2002</td>
+  <td>Crimson</td>
+  <td align=right>33528</td>
+  <td class=xl65 align=right>$22,621.26</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Mazda</td>
+  <td>MPV</td>
+  <td align=right>2000</td>
+  <td>Green</td>
+  <td align=right>5413</td>
+  <td class=xl65 align=right>$81,492.94</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Infiniti</td>
+  <td>G</td>
+  <td align=right>2012</td>
+  <td>Mauv</td>
+  <td align=right>69363</td>
+  <td class=xl65 align=right>$68,287.42</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Mitsubishi</td>
+  <td>Montero Sport</td>
+  <td align=right>1997</td>
+  <td>Aquamarine</td>
+  <td align=right>181370</td>
+  <td class=xl65 align=right>$85,035.54</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Chrysler</td>
+  <td>New Yorker</td>
+  <td align=right>1993</td>
+  <td>Crimson</td>
+  <td align=right>105317</td>
+  <td class=xl65 align=right>$34,321.99</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Ford</td>
+  <td>Bronco</td>
+  <td align=right>1990</td>
+  <td>Orange</td>
+  <td align=right>127959</td>
+  <td class=xl65 align=right>$61,713.36</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Ford</td>
+  <td>F-Series</td>
+  <td align=right>1995</td>
+  <td>Mauv</td>
+  <td align=right>161568</td>
+  <td class=xl65 align=right>$90,613.12</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Ford</td>
+  <td>E250</td>
+  <td align=right>2004</td>
+  <td>Crimson</td>
+  <td align=right>271</td>
+  <td class=xl65 align=right>$11,673.55</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Audi</td>
+  <td>TT</td>
+  <td align=right>2009</td>
+  <td>Goldenrod</td>
+  <td align=right>123847</td>
+  <td class=xl65 align=right>$28,000.84</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Ford</td>
+  <td>Escort</td>
+  <td align=right>1998</td>
+  <td>Crimson</td>
+  <td align=right>179628</td>
+  <td class=xl65 align=right>$39,042.22</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Mercedes-Benz</td>
+  <td>R-Class</td>
+  <td align=right>2010</td>
+  <td>Turquoise</td>
+  <td align=right>100145</td>
+  <td class=xl65 align=right>$66,540.56</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Mitsubishi</td>
+  <td>Montero Sport</td>
+  <td align=right>1998</td>
+  <td>Maroon</td>
+  <td align=right>128989</td>
+  <td class=xl65 align=right>$87,326.00</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Dodge</td>
+  <td>Ram Van 3500</td>
+  <td align=right>2000</td>
+  <td>Indigo</td>
+  <td align=right>15026</td>
+  <td class=xl65 align=right>$50,063.08</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Pontiac</td>
+  <td>Bonneville</td>
+  <td align=right>1996</td>
+  <td>Goldenrod</td>
+  <td align=right>166119</td>
+  <td class=xl65 align=right>$79,617.14</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Ford</td>
+  <td>Festiva</td>
+  <td align=right>1988</td>
+  <td>Goldenrod</td>
+  <td align=right>70160</td>
+  <td class=xl65 align=right>$37,409.94</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Audi</td>
+  <td>A5</td>
+  <td align=right>2010</td>
+  <td>Orange</td>
+  <td align=right>51053</td>
+  <td class=xl65 align=right>$62,723.77</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Ford</td>
+  <td>Flex</td>
+  <td align=right>2011</td>
+  <td>Pink</td>
+  <td align=right>158601</td>
+  <td class=xl65 align=right>$23,373.64</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Acura</td>
+  <td>Legend</td>
+  <td align=right>1988</td>
+  <td>Maroon</td>
+  <td align=right>139687</td>
+  <td class=xl65 align=right>$3,370.38</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Dodge</td>
+  <td>Caliber</td>
+  <td align=right>2008</td>
+  <td>Teal</td>
+  <td align=right>41111</td>
+  <td class=xl65 align=right>$84,092.63</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Ford</td>
+  <td>E150</td>
+  <td align=right>2004</td>
+  <td>Goldenrod</td>
+  <td align=right>153231</td>
+  <td class=xl65 align=right>$61,853.34</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Dodge</td>
+  <td>Dakota</td>
+  <td align=right>2000</td>
+  <td>Crimson</td>
+  <td align=right>127500</td>
+  <td class=xl65 align=right>$68,096.67</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Toyota</td>
+  <td>Matrix</td>
+  <td align=right>2007</td>
+  <td>Goldenrod</td>
+  <td align=right>72281</td>
+  <td class=xl65 align=right>$23,245.05</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Alfa Romeo</td>
+  <td>Spider</td>
+  <td align=right>1993</td>
+  <td>Green</td>
+  <td align=right>115373</td>
+  <td class=xl65 align=right>$98,268.20</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Pontiac</td>
+  <td>G6</td>
+  <td align=right>2009</td>
+  <td>Red</td>
+  <td align=right>151835</td>
+  <td class=xl65 align=right>$82,355.78</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Mitsubishi</td>
+  <td>Galant</td>
+  <td align=right>2003</td>
+  <td>Yellow</td>
+  <td align=right>10770</td>
+  <td class=xl65 align=right>$18,693.39</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Volvo</td>
+  <td>XC60</td>
+  <td align=right>2009</td>
+  <td>Teal</td>
+  <td align=right>195592</td>
+  <td class=xl65 align=right>$56,959.26</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Infiniti</td>
+  <td>FX</td>
+  <td align=right>2008</td>
+  <td>Fuscia</td>
+  <td align=right>7944</td>
+  <td class=xl65 align=right>$3,869.04</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Mercedes-Benz</td>
+  <td>M-Class</td>
+  <td align=right>2011</td>
+  <td>Mauv</td>
+  <td align=right>9463</td>
+  <td class=xl65 align=right>$39,472.84</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Toyota</td>
+  <td>Matrix</td>
+  <td align=right>2010</td>
+  <td>Mauv</td>
+  <td align=right>138011</td>
+  <td class=xl65 align=right>$81,750.29</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Land Rover</td>
+  <td>Defender 110</td>
+  <td align=right>1993</td>
+  <td>Blue</td>
+  <td align=right>88446</td>
+  <td class=xl65 align=right>$15,117.43</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Ford</td>
+  <td>Econoline E250</td>
+  <td align=right>1998</td>
+  <td>Red</td>
+  <td align=right>183082</td>
+  <td class=xl65 align=right>$83,508.61</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Nissan</td>
+  <td>Altima</td>
+  <td align=right>1998</td>
+  <td>Orange</td>
+  <td align=right>58010</td>
+  <td class=xl65 align=right>$57,545.99</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Chevrolet</td>
+  <td>Avalanche 2500</td>
+  <td align=right>2004</td>
+  <td>Purple</td>
+  <td align=right>159805</td>
+  <td class=xl65 align=right>$3,574.55</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Lexus</td>
+  <td>LX</td>
+  <td align=right>2005</td>
+  <td>Blue</td>
+  <td align=right>161895</td>
+  <td class=xl65 align=right>$93,135.90</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>GMC</td>
+  <td>Yukon</td>
+  <td align=right>2004</td>
+  <td>Pink</td>
+  <td align=right>115793</td>
+  <td class=xl65 align=right>$72,986.19</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Pontiac</td>
+  <td>Grand Prix</td>
+  <td align=right>1983</td>
+  <td>Turquoise</td>
+  <td align=right>167810</td>
+  <td class=xl65 align=right>$54,335.69</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Ford</td>
+  <td>E150</td>
+  <td align=right>2009</td>
+  <td>Goldenrod</td>
+  <td align=right>44354</td>
+  <td class=xl65 align=right>$95,852.57</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Mitsubishi</td>
+  <td>Montero</td>
+  <td align=right>2006</td>
+  <td>Pink</td>
+  <td align=right>66226</td>
+  <td class=xl65 align=right>$45,125.65</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Dodge</td>
+  <td>Ram 1500 Club</td>
+  <td align=right>1995</td>
+  <td>Khaki</td>
+  <td align=right>105041</td>
+  <td class=xl65 align=right>$57,961.60</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Nissan</td>
+  <td>Xterra</td>
+  <td align=right>2009</td>
+  <td>Violet</td>
+  <td align=right>142660</td>
+  <td class=xl65 align=right>$61,194.62</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Lotus</td>
+  <td>Elan</td>
+  <td align=right>1992</td>
+  <td>Teal</td>
+  <td align=right>133031</td>
+  <td class=xl65 align=right>$7,392.39</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Mitsubishi</td>
+  <td>Expo</td>
+  <td align=right>1993</td>
+  <td>Red</td>
+  <td align=right>54150</td>
+  <td class=xl65 align=right>$15,531.54</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Ford</td>
+  <td>Thunderbird</td>
+  <td align=right>1993</td>
+  <td>Purple</td>
+  <td align=right>21619</td>
+  <td class=xl65 align=right>$59,482.66</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Mitsubishi</td>
+  <td>Diamante</td>
+  <td align=right>1992</td>
+  <td>Aquamarine</td>
+  <td align=right>148436</td>
+  <td class=xl65 align=right>$63,799.07</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Chevrolet</td>
+  <td>Suburban</td>
+  <td align=right>2006</td>
+  <td>Green</td>
+  <td align=right>192488</td>
+  <td class=xl65 align=right>$33,704.77</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Ford</td>
+  <td>E-Series</td>
+  <td align=right>2006</td>
+  <td>Puce</td>
+  <td align=right>91560</td>
+  <td class=xl65 align=right>$56,247.20</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>GMC</td>
+  <td>Rally Wagon 1500</td>
+  <td align=right>1992</td>
+  <td>Maroon</td>
+  <td align=right>112742</td>
+  <td class=xl65 align=right>$53,765.69</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Toyota</td>
+  <td>Avalon</td>
+  <td align=right>2009</td>
+  <td>Turquoise</td>
+  <td align=right>5834</td>
+  <td class=xl65 align=right>$28,889.21</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Porsche</td>
+  <td align=right>944</td>
+  <td align=right>1987</td>
+  <td>Mauv</td>
+  <td align=right>69681</td>
+  <td class=xl65 align=right>$88,320.28</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Ford</td>
+  <td>Thunderbird</td>
+  <td align=right>2004</td>
+  <td>Khaki</td>
+  <td align=right>71773</td>
+  <td class=xl65 align=right>$34,258.36</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Bentley</td>
+  <td>Azure</td>
+  <td align=right>2006</td>
+  <td>Puce</td>
+  <td align=right>122217</td>
+  <td class=xl65 align=right>$79,425.16</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Dodge</td>
+  <td>Ram 1500</td>
+  <td align=right>2007</td>
+  <td>Aquamarine</td>
+  <td align=right>93173</td>
+  <td class=xl65 align=right>$78,182.73</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Rolls-Royce</td>
+  <td>Phantom</td>
+  <td align=right>2011</td>
+  <td>Yellow</td>
+  <td align=right>24225</td>
+  <td class=xl65 align=right>$93,046.10</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Audi</td>
+  <td>A4</td>
+  <td align=right>1996</td>
+  <td>Maroon</td>
+  <td align=right>189818</td>
+  <td class=xl65 align=right>$53,363.26</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Isuzu</td>
+  <td>Trooper</td>
+  <td align=right>1997</td>
+  <td>Purple</td>
+  <td align=right>51331</td>
+  <td class=xl65 align=right>$39,998.71</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>GMC</td>
+  <td>Savana 3500</td>
+  <td align=right>2002</td>
+  <td>Teal</td>
+  <td align=right>148709</td>
+  <td class=xl65 align=right>$3,263.54</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Cadillac</td>
+  <td>Catera</td>
+  <td align=right>1998</td>
+  <td>Crimson</td>
+  <td align=right>142796</td>
+  <td class=xl65 align=right>$12,736.37</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Dodge</td>
+  <td>Durango</td>
+  <td align=right>2012</td>
+  <td>Crimson</td>
+  <td align=right>9522</td>
+  <td class=xl65 align=right>$41,373.56</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Mazda</td>
+  <td>CX-7</td>
+  <td align=right>2009</td>
+  <td>Goldenrod</td>
+  <td align=right>63892</td>
+  <td class=xl65 align=right>$73,380.65</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Honda</td>
+  <td>Accord</td>
+  <td align=right>1995</td>
+  <td>Crimson</td>
+  <td align=right>51519</td>
+  <td class=xl65 align=right>$50,927.85</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Porsche</td>
+  <td align=right>911</td>
+  <td align=right>1985</td>
+  <td>Mauv</td>
+  <td align=right>195012</td>
+  <td class=xl65 align=right>$20,067.30</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Kia</td>
+  <td>Rio</td>
+  <td align=right>2001</td>
+  <td>Purple</td>
+  <td align=right>127295</td>
+  <td class=xl65 align=right>$40,768.07</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>GMC</td>
+  <td>Savana 2500</td>
+  <td align=right>2001</td>
+  <td>Teal</td>
+  <td align=right>171773</td>
+  <td class=xl65 align=right>$92,619.02</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Honda</td>
+  <td>del Sol</td>
+  <td align=right>1993</td>
+  <td>Red</td>
+  <td align=right>126198</td>
+  <td class=xl65 align=right>$41,778.59</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Chevrolet</td>
+  <td>Avalanche</td>
+  <td align=right>2011</td>
+  <td>Blue</td>
+  <td align=right>81723</td>
+  <td class=xl65 align=right>$78,515.78</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>BMW</td>
+  <td>M3</td>
+  <td align=right>1998</td>
+  <td>Turquoise</td>
+  <td align=right>56201</td>
+  <td class=xl65 align=right>$24,165.13</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Chevrolet</td>
+  <td>Corvette</td>
+  <td align=right>1993</td>
+  <td>Puce</td>
+  <td align=right>91924</td>
+  <td class=xl65 align=right>$18,020.84</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Mitsubishi</td>
+  <td>Lancer Evolution</td>
+  <td align=right>2004</td>
+  <td>Teal</td>
+  <td align=right>20411</td>
+  <td class=xl65 align=right>$39,975.64</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Audi</td>
+  <td>A5</td>
+  <td align=right>2012</td>
+  <td>Yellow</td>
+  <td align=right>73523</td>
+  <td class=xl65 align=right>$30,665.78</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Lexus</td>
+  <td>HS</td>
+  <td align=right>2010</td>
+  <td>Purple</td>
+  <td align=right>61357</td>
+  <td class=xl65 align=right>$32,332.56</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Volvo</td>
+  <td align=right>940</td>
+  <td align=right>1995</td>
+  <td>Goldenrod</td>
+  <td align=right>193850</td>
+  <td class=xl65 align=right>$28,606.31</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Volvo</td>
+  <td>XC70</td>
+  <td align=right>2008</td>
+  <td>Purple</td>
+  <td align=right>38615</td>
+  <td class=xl65 align=right>$96,933.84</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Bentley</td>
+  <td>Continental GT</td>
+  <td align=right>2009</td>
+  <td>Pink</td>
+  <td align=right>62507</td>
+  <td class=xl65 align=right>$35,362.92</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Dodge</td>
+  <td>Ram 2500</td>
+  <td align=right>1996</td>
+  <td>Orange</td>
+  <td align=right>19461</td>
+  <td class=xl65 align=right>$38,675.34</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Ford</td>
+  <td>F250</td>
+  <td align=right>2009</td>
+  <td>Fuscia</td>
+  <td align=right>178608</td>
+  <td class=xl65 align=right>$50,782.44</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Ferrari</td>
+  <td>F430</td>
+  <td align=right>2006</td>
+  <td>Red</td>
+  <td align=right>121167</td>
+  <td class=xl65 align=right>$96,040.69</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Oldsmobile</td>
+  <td>Cutlass Supreme</td>
+  <td align=right>1992</td>
+  <td>Blue</td>
+  <td align=right>64582</td>
+  <td class=xl65 align=right>$22,357.61</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Pontiac</td>
+  <td>Vibe</td>
+  <td align=right>2003</td>
+  <td>Pink</td>
+  <td align=right>134178</td>
+  <td class=xl65 align=right>$64,949.87</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Mercedes-Benz</td>
+  <td>W201</td>
+  <td align=right>1993</td>
+  <td>Maroon</td>
+  <td align=right>67181</td>
+  <td class=xl65 align=right>$71,218.67</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Pontiac</td>
+  <td>Grand Am</td>
+  <td align=right>1985</td>
+  <td>Crimson</td>
+  <td align=right>132672</td>
+  <td class=xl65 align=right>$21,885.46</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Lincoln</td>
+  <td>Navigator</td>
+  <td align=right>2009</td>
+  <td>Blue</td>
+  <td align=right>91344</td>
+  <td class=xl65 align=right>$33,856.33</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Acura</td>
+  <td>RL</td>
+  <td align=right>2001</td>
+  <td>Goldenrod</td>
+  <td align=right>185336</td>
+  <td class=xl65 align=right>$19,981.20</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Nissan</td>
+  <td>Altima</td>
+  <td align=right>2000</td>
+  <td>Teal</td>
+  <td align=right>191921</td>
+  <td class=xl65 align=right>$36,490.40</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Mitsubishi</td>
+  <td>Diamante</td>
+  <td align=right>1992</td>
+  <td>Orange</td>
+  <td align=right>140689</td>
+  <td class=xl65 align=right>$98,239.60</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>GMC</td>
+  <td>Yukon XL 2500</td>
+  <td align=right>2013</td>
+  <td>Orange</td>
+  <td align=right>8239</td>
+  <td class=xl65 align=right>$9,164.74</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>GMC</td>
+  <td>Yukon XL 2500</td>
+  <td align=right>2012</td>
+  <td>Indigo</td>
+  <td align=right>166886</td>
+  <td class=xl65 align=right>$11,598.82</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Mazda</td>
+  <td>Mazda5</td>
+  <td align=right>2008</td>
+  <td>Blue</td>
+  <td align=right>84646</td>
+  <td class=xl65 align=right>$94,178.91</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>BMW</td>
+  <td align=right>325</td>
+  <td align=right>2006</td>
+  <td>Turquoise</td>
+  <td align=right>108514</td>
+  <td class=xl65 align=right>$70,363.46</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Toyota</td>
+  <td>Sienna</td>
+  <td align=right>2003</td>
+  <td>Yellow</td>
+  <td align=right>93371</td>
+  <td class=xl65 align=right>$57,136.11</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Chrysler</td>
+  <td>PT Cruiser</td>
+  <td align=right>2002</td>
+  <td>Turquoise</td>
+  <td align=right>69626</td>
+  <td class=xl65 align=right>$88,601.43</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Chevrolet</td>
+  <td>Malibu</td>
+  <td align=right>1998</td>
+  <td>Red</td>
+  <td align=right>150005</td>
+  <td class=xl65 align=right>$86,461.19</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Chrysler</td>
+  <td>Cirrus</td>
+  <td align=right>1996</td>
+  <td>Blue</td>
+  <td align=right>79991</td>
+  <td class=xl65 align=right>$52,972.32</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Ford</td>
+  <td>Taurus</td>
+  <td align=right>1996</td>
+  <td>Purple</td>
+  <td align=right>39348</td>
+  <td class=xl65 align=right>$86,267.20</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Suzuki</td>
+  <td>Grand Vitara</td>
+  <td align=right>1999</td>
+  <td>Yellow</td>
+  <td align=right>33734</td>
+  <td class=xl65 align=right>$22,912.30</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Toyota</td>
+  <td>Celica</td>
+  <td align=right>2003</td>
+  <td>Red</td>
+  <td align=right>116243</td>
+  <td class=xl65 align=right>$74,879.74</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Chevrolet</td>
+  <td>Corvair</td>
+  <td align=right>1960</td>
+  <td>Red</td>
+  <td align=right>80739</td>
+  <td class=xl65 align=right>$4,354.15</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Volvo</td>
+  <td align=right>960</td>
+  <td align=right>1995</td>
+  <td>Green</td>
+  <td align=right>187571</td>
+  <td class=xl65 align=right>$30,602.83</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Ford</td>
+  <td>Th!nk</td>
+  <td align=right>2002</td>
+  <td>Pink</td>
+  <td align=right>55760</td>
+  <td class=xl65 align=right>$41,718.52</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Nissan</td>
+  <td>Rogue</td>
+  <td align=right>2010</td>
+  <td>Purple</td>
+  <td align=right>148037</td>
+  <td class=xl65 align=right>$26,999.56</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Nissan</td>
+  <td>Maxima</td>
+  <td align=right>1994</td>
+  <td>Fuscia</td>
+  <td align=right>191541</td>
+  <td class=xl65 align=right>$46,854.26</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Mercedes-Benz</td>
+  <td>400E</td>
+  <td align=right>1992</td>
+  <td>Turquoise</td>
+  <td align=right>24199</td>
+  <td class=xl65 align=right>$28,527.55</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Eagle</td>
+  <td>Talon</td>
+  <td align=right>1992</td>
+  <td>Maroon</td>
+  <td align=right>154931</td>
+  <td class=xl65 align=right>$90,596.10</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Mazda</td>
+  <td>B-Series Plus</td>
+  <td align=right>1993</td>
+  <td>Fuscia</td>
+  <td align=right>195796</td>
+  <td class=xl65 align=right>$88,677.42</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>BMW</td>
+  <td>6 Series</td>
+  <td align=right>2008</td>
+  <td>Khaki</td>
+  <td align=right>169990</td>
+  <td class=xl65 align=right>$46,351.53</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Toyota</td>
+  <td>Camry Solara</td>
+  <td align=right>2006</td>
+  <td>Goldenrod</td>
+  <td align=right>41844</td>
+  <td class=xl65 align=right>$14,075.89</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Mercedes-Benz</td>
+  <td>E-Class</td>
+  <td align=right>1986</td>
+  <td>Yellow</td>
+  <td align=right>177895</td>
+  <td class=xl65 align=right>$78,970.50</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Buick</td>
+  <td>Skyhawk</td>
+  <td align=right>1988</td>
+  <td>Mauv</td>
+  <td align=right>87649</td>
+  <td class=xl65 align=right>$1,864.99</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Mitsubishi</td>
+  <td>Eclipse</td>
+  <td align=right>2002</td>
+  <td>Mauv</td>
+  <td align=right>5035</td>
+  <td class=xl65 align=right>$24,744.96</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Pontiac</td>
+  <td>Grand Prix</td>
+  <td align=right>1993</td>
+  <td>Violet</td>
+  <td align=right>61301</td>
+  <td class=xl65 align=right>$73,964.89</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Volkswagen</td>
+  <td>Golf</td>
+  <td align=right>1990</td>
+  <td>Pink</td>
+  <td align=right>181219</td>
+  <td class=xl65 align=right>$31,682.82</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Toyota</td>
+  <td>Tacoma</td>
+  <td align=right>2001</td>
+  <td>Puce</td>
+  <td align=right>39415</td>
+  <td class=xl65 align=right>$77,730.65</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Mercedes-Benz</td>
+  <td>SL-Class</td>
+  <td align=right>1997</td>
+  <td>Puce</td>
+  <td align=right>193746</td>
+  <td class=xl65 align=right>$16,862.74</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Mitsubishi</td>
+  <td>Raider</td>
+  <td align=right>2006</td>
+  <td>Mauv</td>
+  <td align=right>188990</td>
+  <td class=xl65 align=right>$91,159.67</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Mercedes-Benz</td>
+  <td>E-Class</td>
+  <td align=right>1992</td>
+  <td>Purple</td>
+  <td align=right>69444</td>
+  <td class=xl65 align=right>$74,121.17</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Mercury</td>
+  <td>Grand Marquis</td>
+  <td align=right>1995</td>
+  <td>Khaki</td>
+  <td align=right>143683</td>
+  <td class=xl65 align=right>$45,605.63</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Land Rover</td>
+  <td>Freelander</td>
+  <td align=right>2002</td>
+  <td>Green</td>
+  <td align=right>3681</td>
+  <td class=xl65 align=right>$16,695.62</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Lincoln</td>
+  <td>Continental</td>
+  <td align=right>1999</td>
+  <td>Turquoise</td>
+  <td align=right>83156</td>
+  <td class=xl65 align=right>$5,041.69</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Subaru</td>
+  <td>Forester</td>
+  <td align=right>2011</td>
+  <td>Purple</td>
+  <td align=right>32001</td>
+  <td class=xl65 align=right>$70,439.92</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Nissan</td>
+  <td>Frontier</td>
+  <td align=right>2001</td>
+  <td>Yellow</td>
+  <td align=right>56926</td>
+  <td class=xl65 align=right>$29,583.62</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Buick</td>
+  <td>LeSabre</td>
+  <td align=right>1988</td>
+  <td>Aquamarine</td>
+  <td align=right>116394</td>
+  <td class=xl65 align=right>$6,339.34</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Mercedes-Benz</td>
+  <td>C-Class</td>
+  <td align=right>2004</td>
+  <td>Crimson</td>
+  <td align=right>14960</td>
+  <td class=xl65 align=right>$93,621.77</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Suzuki</td>
+  <td>Swift</td>
+  <td align=right>1991</td>
+  <td>Red</td>
+  <td align=right>142095</td>
+  <td class=xl65 align=right>$52,215.90</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Volkswagen</td>
+  <td>Passat</td>
+  <td align=right>1990</td>
+  <td>Blue</td>
+  <td align=right>65256</td>
+  <td class=xl65 align=right>$33,725.06</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>GMC</td>
+  <td>Sonoma Club Coupe</td>
+  <td align=right>1998</td>
+  <td>Turquoise</td>
+  <td align=right>129763</td>
+  <td class=xl65 align=right>$35,565.86</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Infiniti</td>
+  <td>QX56</td>
+  <td align=right>2008</td>
+  <td>Khaki</td>
+  <td align=right>176184</td>
+  <td class=xl65 align=right>$71,285.89</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Scion</td>
+  <td>xA</td>
+  <td align=right>2004</td>
+  <td>Yellow</td>
+  <td align=right>170100</td>
+  <td class=xl65 align=right>$55,722.52</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Volkswagen</td>
+  <td>GTI</td>
+  <td align=right>1989</td>
+  <td>Orange</td>
+  <td align=right>122990</td>
+  <td class=xl65 align=right>$24,413.46</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Mazda</td>
+  <td>Protege5</td>
+  <td align=right>2003</td>
+  <td>Yellow</td>
+  <td align=right>68353</td>
+  <td class=xl65 align=right>$39,398.88</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Lexus</td>
+  <td>LS Hybrid</td>
+  <td align=right>2011</td>
+  <td>Red</td>
+  <td align=right>111220</td>
+  <td class=xl65 align=right>$49,985.15</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Chevrolet</td>
+  <td>Cobalt</td>
+  <td align=right>2008</td>
+  <td>Puce</td>
+  <td align=right>120532</td>
+  <td class=xl65 align=right>$83,889.12</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Toyota</td>
+  <td>Avalon</td>
+  <td align=right>2007</td>
+  <td>Blue</td>
+  <td align=right>44746</td>
+  <td class=xl65 align=right>$84,799.91</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Chrysler</td>
+  <td>Cirrus</td>
+  <td align=right>1997</td>
+  <td>Green</td>
+  <td align=right>99099</td>
+  <td class=xl65 align=right>$26,313.38</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Volvo</td>
+  <td>S40</td>
+  <td align=right>2011</td>
+  <td>Blue</td>
+  <td align=right>178059</td>
+  <td class=xl65 align=right>$58,747.59</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Lexus</td>
+  <td>GS</td>
+  <td align=right>2009</td>
+  <td>Fuscia</td>
+  <td align=right>134370</td>
+  <td class=xl65 align=right>$70,444.99</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Nissan</td>
+  <td>Altima</td>
+  <td align=right>2013</td>
+  <td>Puce</td>
+  <td align=right>188078</td>
+  <td class=xl65 align=right>$71,804.21</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Subaru</td>
+  <td>Brat</td>
+  <td align=right>1987</td>
+  <td>Green</td>
+  <td align=right>51396</td>
+  <td class=xl65 align=right>$97,588.17</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Oldsmobile</td>
+  <td>Ciera</td>
+  <td align=right>1993</td>
+  <td>Crimson</td>
+  <td align=right>118861</td>
+  <td class=xl65 align=right>$50,380.36</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Dodge</td>
+  <td>Avenger</td>
+  <td align=right>2011</td>
+  <td>Blue</td>
+  <td align=right>54148</td>
+  <td class=xl65 align=right>$46,119.60</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Ford</td>
+  <td>Flex</td>
+  <td align=right>2009</td>
+  <td>Yellow</td>
+  <td align=right>63333</td>
+  <td class=xl65 align=right>$72,580.14</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Audi</td>
+  <td>Allroad</td>
+  <td align=right>2005</td>
+  <td>Maroon</td>
+  <td align=right>77697</td>
+  <td class=xl65 align=right>$45,919.64</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>BMW</td>
+  <td>X3</td>
+  <td align=right>2004</td>
+  <td>Yellow</td>
+  <td align=right>193171</td>
+  <td class=xl65 align=right>$92,213.09</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Dodge</td>
+  <td>Neon</td>
+  <td align=right>1995</td>
+  <td>Indigo</td>
+  <td align=right>11969</td>
+  <td class=xl65 align=right>$81,229.68</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Mazda</td>
+  <td>Mazda3</td>
+  <td align=right>2010</td>
+  <td>Green</td>
+  <td align=right>68689</td>
+  <td class=xl65 align=right>$48,596.57</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>BMW</td>
+  <td>M5</td>
+  <td align=right>1992</td>
+  <td>Orange</td>
+  <td align=right>142553</td>
+  <td class=xl65 align=right>$31,986.40</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Isuzu</td>
+  <td>Amigo</td>
+  <td align=right>1998</td>
+  <td>Teal</td>
+  <td align=right>186169</td>
+  <td class=xl65 align=right>$70,323.21</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Dodge</td>
+  <td>Ram 2500 Club</td>
+  <td align=right>1996</td>
+  <td>Violet</td>
+  <td align=right>106887</td>
+  <td class=xl65 align=right>$44,681.91</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Cadillac</td>
+  <td>Escalade EXT</td>
+  <td align=right>2002</td>
+  <td>Fuscia</td>
+  <td align=right>136065</td>
+  <td class=xl65 align=right>$39,043.23</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Volvo</td>
+  <td>V70</td>
+  <td align=right>1998</td>
+  <td>Maroon</td>
+  <td align=right>194870</td>
+  <td class=xl65 align=right>$5,312.60</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Chevrolet</td>
+  <td>Venture</td>
+  <td align=right>2000</td>
+  <td>Pink</td>
+  <td align=right>103554</td>
+  <td class=xl65 align=right>$52,882.33</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Pontiac</td>
+  <td align=right>6000</td>
+  <td align=right>1985</td>
+  <td>Khaki</td>
+  <td align=right>77854</td>
+  <td class=xl65 align=right>$42,772.19</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Pontiac</td>
+  <td>Grand Prix</td>
+  <td align=right>1991</td>
+  <td>Yellow</td>
+  <td align=right>34513</td>
+  <td class=xl65 align=right>$58,082.62</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Buick</td>
+  <td>Lucerne</td>
+  <td align=right>2010</td>
+  <td>Fuscia</td>
+  <td align=right>58388</td>
+  <td class=xl65 align=right>$86,554.23</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Mercury</td>
+  <td>Grand Marquis</td>
+  <td align=right>1996</td>
+  <td>Yellow</td>
+  <td align=right>164917</td>
+  <td class=xl65 align=right>$76,305.53</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Mercedes-Benz</td>
+  <td>CL-Class</td>
+  <td align=right>2001</td>
+  <td>Turquoise</td>
+  <td align=right>88048</td>
+  <td class=xl65 align=right>$58,541.68</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Cadillac</td>
+  <td>XLR-V</td>
+  <td align=right>2009</td>
+  <td>Fuscia</td>
+  <td align=right>20625</td>
+  <td class=xl65 align=right>$54,388.81</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Pontiac</td>
+  <td>Firebird</td>
+  <td align=right>1967</td>
+  <td>Puce</td>
+  <td align=right>183377</td>
+  <td class=xl65 align=right>$68,612.50</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Jeep</td>
+  <td>Grand Cherokee</td>
+  <td align=right>2005</td>
+  <td>Purple</td>
+  <td align=right>139384</td>
+  <td class=xl65 align=right>$31,237.89</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>Audi</td>
+  <td>A4</td>
+  <td align=right>1997</td>
+  <td>Puce</td>
+  <td align=right>197332</td>
+  <td class=xl65 align=right>$80,071.27</td>
+ </tr>
+ <![if supportMisalignedColumns]>
+ <tr height=0 style='display:none'>
+  <td width=104 style='width:78pt'></td>
+  <td width=136 style='width:102pt'></td>
+  <td width=59 style='width:44pt'></td>
+  <td width=83 style='width:62pt'></td>
+  <td width=82 style='width:62pt'></td>
+  <td width=71 style='width:53pt'></td>
+ </tr>
+ <![endif]>
+</table>
+
+</body>
+
+</html>

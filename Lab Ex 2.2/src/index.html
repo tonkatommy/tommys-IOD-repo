@@ -76,6 +76,32 @@
       }
 
       /* III. Position */
+      .article-positioning {
+        height: 400px;
+      }
+      /* Step 1.1 absolute position */
+      .position-absolute {
+        color: red;
+        position: absolute;
+        /* Step 2.2 values */
+        /* top: 20px; */
+        left: 40px;
+        /* right: 40px; */
+        /* bottom: 200px; */
+        /* Step 2.4 z-index */
+        z-index: 1; /* Brings the element to the front */
+      }
+      /* Step 2.1 relative position */
+      .position-relative {
+        color: blue;
+        position: relative;
+      }
+
+      /* Step 3.1 sticky position */
+      .position-sticky {
+        position: sticky;
+        top: 20px;
+      }
 
       /* IV. Styling text */
 
@@ -142,7 +168,7 @@
       </div>
     </article>
 
-    <article>
+    <article class="article-positioning">
       <h2>III. Positioning</h2>
       <div class="position-absolute">I'm absolutely positioned.</div>
 

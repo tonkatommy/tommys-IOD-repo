@@ -10,6 +10,10 @@
         border: 1px solid black;
       }
 
+      * {
+        /* font-size: 10px; */
+      }
+
       /* Put styles for sections 1.2, 1.3, 1.4 here */
       .style-me1 {
         color: red;
@@ -23,13 +27,52 @@
         color: purple;
       }
 
-      /* II. Box model and common properties */
       .my-descendants-are-styled p {
         background-color: red;
       }
 
       .my-children-are-styled > p {
         background-color: darkred;
+      }
+
+      /* II. Box model and common properties */
+
+      .box {
+        /* Step 1.1  margin and padding*/
+        margin: 20px 0;
+        padding: 30px 30px;
+        /* Step 2.1  width and height*/
+        width: 500px;
+        height: 500px;
+        /* Step 3.1 set border */
+        border: 1px solid rgb(175, 29, 29);
+        /* Step 4.1 box-sizing */
+        box-sizing: border-box;
+        /* box-sizing: content-box; */
+        /* Step 6.1 outline */
+        outline: 10px solid orange;
+        /* Step 7.1 border-radius */
+        border-radius: 20px;
+        /* Step 7.2 border-radius 50% */
+        /* border-radius: 50%; */
+        /* Step 8.1 background image */
+        background-image: url("../assets/images/img1.png");
+        /* Step 8.2 background-size */
+        background-size: contain;
+        /* Step 8.3 background-repeat */
+        background-repeat: no-repeat;
+        /* Step 8.4 background-position */
+        background-position: center;
+      }
+
+      .box p {
+        /* Step 5.1 text overflow */
+        border: 1px solid green;
+        width: 400px;
+        height: 200px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
       }
 
       /* III. Position */
@@ -81,16 +124,18 @@
       <h2>II. Box model and common properties</h2>
       <div class="box">I'm the first box.</div>
       <div class="box">
-        I'm second and I have a lot of content. In publishing and graphic
-        design, Lorem ipsum is a placeholder text commonly used to demonstrate
-        the visual form of a document or a typeface without relying on
-        meaningful content. "Lorem ipsum dolor sit amet, consectetur adipiscing
-        elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-        ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
-        qui officia deserunt mollit anim id est laborum."
+        <p>
+          I'm second and I have a lot of content. In publishing and graphic
+          design, Lorem ipsum is a placeholder text commonly used to demonstrate
+          the visual form of a document or a typeface without relying on
+          meaningful content. "Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+          ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+          irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+          fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+          sunt in culpa qui officia deserunt mollit anim id est laborum."
+        </p>
       </div>
       <div class="box" style="height: 200px">
         My height is set using directly using style attribute.

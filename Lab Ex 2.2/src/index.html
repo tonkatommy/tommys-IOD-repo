@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&family=Shadows+Into+Light+Two&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* I. Selectors */
+      /* Put styles for sections 1.1, 1.2, 1.3 and 1.4 here */
+      article {
+        margin: 20px 0;
+        padding: 20px;
+        border: 1px solid black;
+      }
+
+      /* Put styles for sections 1.2, 1.3, 1.4 here */
+      .style-me1 {
+        color: red;
+      }
+
+      #style-me2 {
+        color: blue;
+      }
+
+      #style-me2.style-me1 {
+        color: purple;
+      }
+
+      .my-descendants-are-styled p {
+        background-color: red;
+      }
+
+      .my-children-are-styled > p {
+        background-color: darkred;
+      }
+
+      /* II. Box model and common properties */
+
+      .box {
+        /* Step 1.1  margin and padding*/
+        margin: 20px 0;
+        padding: 30px 30px;
+        /* Step 2.1  width and height*/
+        width: 500px;
+        height: 500px;
+        /* Step 3.1 set border */
+        border: 1px solid rgb(175, 29, 29);
+        /* Step 4.1 box-sizing */
+        box-sizing: border-box;
+        /* box-sizing: content-box; */
+        /* Step 6.1 outline */
+        outline: 10px solid orange;
+        /* Step 7.1 border-radius */
+        border-radius: 20px;
+        /* Step 7.2 border-radius 50% */
+        /* border-radius: 50%; */
+        /* Step 8.1 background image */
+        background-image: url("../assets/images/img1.png");
+        /* Step 8.2 background-size */
+        background-size: contain;
+        /* Step 8.3 background-repeat */
+        background-repeat: no-repeat;
+        /* Step 8.4 background-position */
+        background-position: center;
+      }
+
+      .box p {
+        /* Step 5.1 text overflow */
+        border: 1px solid green;
+        width: 400px;
+        height: 200px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+
+      /* III. Position */
+      .article-positioning {
+        height: 400px;
+      }
+      /* Step 1.1 absolute position */
+      .position-absolute {
+        color: red;
+        position: absolute;
+        /* Step 2.2 values */
+        /* top: 20px; */
+        left: 40px;
+        /* right: 40px; */
+        /* bottom: 200px; */
+        /* Step 2.4 z-index */
+        z-index: 1; /* Brings the element to the front */
+      }
+      /* Step 2.1 relative position */
+      .position-relative {
+        color: blue;
+        position: relative;
+      }
+
+      /* Step 3.1 sticky position */
+      .position-sticky {
+        position: sticky;
+        top: 20px;
+      }
+
+      /* IV. Styling text */
+
+      .text-style {
+        /* Step 1 color */
+        color: maroon;
+        /* Step 2 font-size */
+        font-size: 20px;
+        /* Step 3 line-height */
+        line-height: 2.5;
+        /* Step 4 font-weight */
+        /* font-weight: bold; */
+        font-weight: 400;
+        /* Step 5 font-family */
+        /* font-family: "Lobster", cursive; */
+        font-family: "Shadows Into Light Two", cursive;
+        /* Step 6 text-align */
+        text-align: center;
+        /* Step 7 letter-spacing */
+        letter-spacing: 0.2em;
+        /* Step 8 word-spacing */
+        word-spacing: 20px;
+        /* Step 9 text-transform */
+        text-transform: capitalize;
+        /* Step 10 text-decoration */
+        text-decoration: wavy green underline;
+      }
+      /* V. Styling Links */
+      a {
+        border: none;
+        border-radius: 10px;
+        padding: 24px 48px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 22px;
+        font-family: "Lobster", cursive;
+        margin: 4px 2px;
+        cursor: pointer;
+      }
+
+      a:link,
+      a:visited,
+      a:focus {
+        background-color: #4caf50;
+        color: white;
+      }
+      a:hover {
+        background: orange;
+      }
+
+      a:active {
+        background: darkred;
+        color: white;
+      }
+      /* VI. calc() */
+      .calc-style {
+        /* Step 1 width */
+        /* width: 100vw; */
+        /* Step 1.1 width - 100 */
+        width: calc(100vw - 100px);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>My CSS journey</h1>
+
+    <article>
+      <h2>I. Selectors</h2>
+
+      <section>
+        <p class="style-me1">
+          1.2. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+        <p id="style-me2">
+          1.3. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+        <p id="style-me2" class="style-me1">
+          1.4. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+      </section>
+
+      <section class="my-children-are-styled">
+        <h3>Direct children &lt;p&gt; are styled</h3>
+        <div>
+          <p>I'm not a direct child, but I'm a descendant</p>
+        </div>
+        <p>I'm a direct child, therefore I'm a descendant</p>
+      </section>
+
+      <section class="my-descendants-are-styled">
+        <h3>Descendants &lt;p&gt; are styled</h3>
+        <div>
+          <p>I'm not a direct child, but I'm a descendant</p>
+        </div>
+        <p>I'm a direct child, therefore I'm a descendant</p>
+      </section>
+    </article>
+
+    <article>
+      <h2>II. Box model and common properties</h2>
+      <div class="box">I'm the first box.</div>
+      <div class="box">
+        <p>
+          I'm second and I have a lot of content. In publishing and graphic
+          design, Lorem ipsum is a placeholder text commonly used to demonstrate
+          the visual form of a document or a typeface without relying on
+          meaningful content. "Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+          ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+          irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+          fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+          sunt in culpa qui officia deserunt mollit anim id est laborum."
+        </p>
+      </div>
+      <div class="box" style="height: 200px">
+        My height is set using directly using style attribute.
+      </div>
+    </article>
+
+    <article class="article-positioning">
+      <h2>III. Positioning</h2>
+      <div class="position-absolute">I'm absolutely positioned.</div>
+
+      <div class="position-relative">
+        I'm relatively positioned.
+        <div class="position-absolute">I'm absolutely positioned.</div>
+      </div>
+    </article>
+    <div class="position-sticky">I'm sticky positioned.</div>
+
+    <article>
+      <h2>IV. Styling text</h2>
+      <p class="text-style">
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+        mollit anim id est laborum."
+      </p>
+    </article>
+
+    <article class="article-links">
+      <h2>V. Styling links</h2>
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Styling_links"
+        alt="Styling links with Mozilla"
+        >Styling links (Mozilla)</a
+      >
+    </article>
+
+    <article>
+      <h2>VI. calc()</h2>
+      <div class="calc-style">
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+        mollit anim id est laborum."
+      </div>
+    </article>
+
+    <div style="height: 1000px; background: #aa99cc">
+      I'm here just for height, to fill in extra space and pretend that the
+      website is longer than it really is :).
+    </div>
+  </body>
+</html>

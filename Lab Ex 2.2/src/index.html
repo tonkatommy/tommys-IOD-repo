@@ -131,6 +131,34 @@
         /* Step 10 text-decoration */
         text-decoration: wavy green underline;
       }
+      /* V. Styling Links */
+      a {
+        border: none;
+        border-radius: 10px;
+        padding: 24px 48px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 22px;
+        font-family: "Lobster", cursive;
+        margin: 4px 2px;
+        cursor: pointer;
+      }
+
+      a:link,
+      a:visited,
+      a:focus {
+        background-color: #4caf50;
+        color: white;
+      }
+      a:hover {
+        background: orange;
+      }
+
+      a:active {
+        background: darkred;
+        color: white;
+      }
       /* VI. calc() */
     </style>
   </head>
@@ -218,7 +246,7 @@
       </p>
     </article>
 
-    <article>
+    <article class="article-links">
       <h2>V. Styling links</h2>
       <a
         href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Styling_links"

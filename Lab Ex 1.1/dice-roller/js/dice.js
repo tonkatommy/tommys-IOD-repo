@@ -15,6 +15,7 @@ var button = document.getElementById("button");
 button.onclick = function () {
   var result = roll();
   printNumber(result);
+  test();
 };
 
 function getNumber() {

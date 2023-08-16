@@ -1,3 +1,9 @@
+// Run this file in the terminal
+// Right-click the file and click "Open in Intergrated Terminal"
+// to open in the current working folder.
+// Run this code:
+// node labEx3.1.js
+
 // 1. What are the results of these expressions?
 // (answer first, then use console.log() to check)
 

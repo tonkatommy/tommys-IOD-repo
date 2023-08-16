@@ -322,9 +322,43 @@ moreSports.unshift("Motor Sports");
 console.log(`moreSports after unshift: ${moreSports}`);
 console.log(`teamSports after unshift: ${teamSports}`);
 
+console.log(`dog1 original value: ${dog1}`);
+
+console.log("dog2 created: dog2 = dog1;");
 let dog2 = dog1;
-console.log(`dog1 before: ${dog1}`);
-console.log(`dog2 before: ${dog2}`);
+
+console.log(`dog2 original value: ${dog2}`);
+dog2 = "Buster";
+
+console.log(`dog2 changed: dog2 = "Buster";`);
+console.log(`dog2 changed value: ${dog2}`);
+console.log(`dog1 original? value: ${dog1}`);
+
+console.log("cat1 original value:");
+for (const [key, value] of Object.entries(cat1)) {
+  console.log(`Key: ${key}\t\tValue: ${value}`);
+}
+
+console.log("cat2 created: cat2 = cat1;");
+let cat2 = cat1;
+
+console.log(`cat2 original value:`);
+for (const [key, value] of Object.entries(cat2)) {
+  console.log(`Key: ${key}\t\tValue: ${value}`);
+}
+
+console.log(`cat2 name changed: cat2.name = "Scratchy";`);
+cat2.name = "Scratchy";
+
+console.log(`cat2 changed value:`);
+for (const [key, value] of Object.entries(cat2)) {
+  console.log(`Key: ${key}\t\tValue: ${value}`);
+}
+
+console.log("cat1 after value:");
+for (const [key, value] of Object.entries(cat1)) {
+  console.log(`Key: ${key}\t\tValue: ${value}`);
+}
 
 // **********************************************************
 

@@ -5,11 +5,11 @@
     <header>
       <nav>
         <!-- works like <a href="/index.html">Home</a> -->
-        <a href="/">Home</a>
+        <a href="index.html">Home</a>
       </nav>
     </header>
     <main>
-      <form method="POST" action="http://localhost:3000/profile">
+      <form method="POST" action="">
         <div class="myform">
           <label for="name">Enter your First name: </label>
           <input type="text" name="name" id="name" required />
@@ -27,24 +27,21 @@
                 id="contactEmail"
                 name="contact"
                 value="email"
-                checked
-              />
+                checked />
               <label for="contactEmail">Email</label>
 
               <input
                 type="radio"
                 id="contactPhone"
                 name="contact"
-                value="phone"
-              />
+                value="phone" />
               <label for="contactPhone">Phone</label>
 
               <input
                 type="radio"
                 id="contactMail"
                 name="contact"
-                value="mail"
-              />
+                value="mail" />
               <label for="contactMail">Mail</label>
             </div>
           </fieldset>
@@ -58,8 +55,7 @@
             type="checkbox"
             id="snowboarding"
             name="interest"
-            value="snowboarding"
-          />
+            value="snowboarding" />
           <label for="snowboarding">Snowboarding</label>
         </div>
         <label for="pet-select">Choose a pet:</label>

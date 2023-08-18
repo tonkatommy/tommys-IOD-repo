@@ -1,9 +1,19 @@
+<!-- Step I. Template and HTTP server -->
+<!-- 1. I used !tab to create the html boilerplate template -->
+<!-- 2. & 3. Used npx http-server & Go Live to run the file -->
 <!DOCTYPE html>
 <html>
   <head>
+    <!-- Step II. HTML elements - metadata -->
+    <!-- 1. <title> tag added when boilerplate was created -->
+    <title>Lab Ex 2.1 HTML</title>
+    <!-- 2. set all meta tags as required following MDN docs -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tommy's Server</title>
+    <meta name="description" content="Learning HTML fundamentals" />
+    <meta name="keywords" content="learning,html,fundamentals" />
+    <meta name="author" content="Tommy Goodman" />
+
     <style>
       table,
       th,
@@ -15,47 +25,63 @@
   <body>
     <header>
       <nav>
+        <span>Navigation: </span>
         <!-- works like <a href="/index.html">Home</a> -->
-        <a href="/">Home</a>
-        <a href="/form">Form</a>
+        <a href="index.html">Home</a>
+        <a href="form.html">Form</a>
       </nav>
     </header>
     <main>
-      <div>Superman</div>
-      <div>Captain America</div>
-      <div>Spiderman</div>
-      <span>The Hulk</span>
-      <span>Killjoy</span>
-      <span>Tinkerbell</span>
-      <p>p represents paragraph</p>
-      <pre>
+      <!-- Step III. HTML Elements: div, span, p, pre, ul, li, ol, article -->
+      <!-- 10. Added <h1> headline -->
+      <h1>Tommy learn's how to code!</h1>
+      <!-- 9. Wrapped with <article> -->
+      <article>
+        <!-- 11. Article headline -->
+        <h2>Step III. HTML Elements: div, span, p, pre, ul, li, ol, article</h2>
+        <!-- 1. Added three <div> tags -->
+        <div>Superman</div>
+        <div>Captain America</div>
+        <div>Spiderman</div>
+        <!-- 2. Added three <span> tags -->
+        <span>Staffy</span>
+        <span>Boxer</span>
+        <span>Shepherd</span>
+        <!-- The <div> tags occupy the whole width of the window. -->
+        <!-- Therefore, they appear stacked on top of each other -->
+        <!-- The <span> tags do not. Hence they are next to each other -->
+
+        <!-- 3. added <p> & <pre> tags with content -->
+        <p>p represents paragraph</p>
+        <pre>
         Text in         a pre element
         is displayed in a fixed-width
         font, and it preserves
         both      spaces and
         line breaks
-        </pre
-      >
-      <h1>Tommy learn's how to code!</h1>
-      <article>
-        <h2>
-          Step 3: Learning Elements: div, span, p, pre, ul, li, ol, article
-        </h2>
+        </pre>
+
+        <!-- 7. Unordered list -->
         <ul>
           <li>Peaches</li>
           <li>Strawberries</li>
           <li>Chocloate</li>
         </ul>
+        <!-- 8. Ordered List -->
         <ol>
           <li>Purple</li>
           <li>Green</li>
           <li>Blue</li>
         </ol>
       </article>
+
+      <!-- Step IV. HTML elements - Tables - table, thead, tbody, tr, td, th -->
+      <!-- 1. Add new <article> with <h2> headline -->
       <article>
         <h2>
-          Step 4: HTML elements - Tables - table, thead, tbody, tr, td, th
+          Step IV. HTML elements - Tables - table, thead, tbody, tr, td, th
         </h2>
+        <!-- 2. Insert table HTML -->
         <table class="table">
           <thead>
             <tr>
@@ -154,7 +180,7 @@
         </table>
       </article>
       <article>
-        <h2>Step 5: HTML Elements - img, video, audio</h2>
+        <h2>Step V. HTML Elements - img, video, audio</h2>
         <img src="assets/my-pc-sm.jpg" width="500" alt="image of my pc setup" />
         <video controls width="400">
           <source src="assets/milky-way.mp4" type="video/mp4" />

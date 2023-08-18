@@ -66,8 +66,8 @@ console.log(
 // 3. Use the following animals array for the below tasks. Test each one by printing the result to
 //    the console. Review the following link for tips:
 
-// https://developer.mozilla.org/en-
-// US/docs/Web/JavaScript/Reference/Global_Objects/Array
+//    https://developer.mozilla.org/en-
+//    US/docs/Web/JavaScript/Reference/Global_Objects/Array
 
 // a) Add 2 new values to the end
 // b) Add 2 new values to the beginning
@@ -80,6 +80,29 @@ console.log(
 const animals = ["Tiger", "Giraffe"];
 console.log("\nLab Ex 3.2 Step 3. Output:");
 console.log(animals);
+animals.push("Dog", "Leopard");
+console.log(animals);
+animals.unshift("Cat", "Lynx");
+console.log(animals);
+
+const replaceMiddleAnimal = (newValue) => {
+  animals[animals.length / 2] = newValue; // Won't work with all array lengths
+};
+
+replaceMiddleAnimal("Zebra");
+
+console.log(animals);
+const foundAnimals = [];
+const findAnimals = (beginsWith) => {
+  for (let i = 0; i < animals.length; i++) {
+    if (animals[i].substring(0, 1).toLowerCase() == beginsWith.toLowerCase()) {
+      foundAnimals.push(animals[i]);
+    }
+  }
+};
+
+findAnimals("L");
+console.log(foundAnimals);
 
 // **********************************************************
 

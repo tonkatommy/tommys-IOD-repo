@@ -1,0 +1,251 @@
+/* FONTS */
+
+/* font-family: 'Patrick Hand', cursive;
+font-family: 'Patrick Hand SC', cursive;
+font-family: 'Raleway', sans-serif;
+font-family: 'Sansita Swashed', cursive; */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+h1 {
+  font-family: "Sansita Swashed", cursive;
+}
+
+h2 {
+  font-family: "Patrick Hand SC", cursive;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.container-flex {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+/* NAVBAR Styles */
+
+.navbar {
+  height: 10%;
+  padding: 10px 0;
+  background-color: #171717;
+}
+
+.nav-logo {
+  display: flex;
+  margin: auto 20px;
+  width: 200px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  color: #e7e7e7;
+  font-family: "Patrick Hand SC", cursive;
+  font-size: 1.5rem;
+}
+
+.nav-item {
+  margin: auto 20px;
+}
+
+.nav-link,
+.nav-link:visited,
+.nav-link:focus {
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav-link:hover {
+  border-bottom: 2px solid #217312;
+}
+
+.nav-active {
+  font-weight: 700;
+  color: #217312;
+}
+
+/* HERO Styles */
+
+.hero {
+  height: 90%;
+}
+.hero-bg {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/hero-bg.jpg");
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 90vh;
+}
+
+.hero-text {
+  text-align: left;
+  position: absolute;
+  top: 40%;
+  left: 10%;
+  color: #e7e7e7;
+  /* transform: translate(-50%, -50%); */
+}
+
+.hero-subtext {
+  font-size: 1.6rem;
+  font-family: "Patrick Hand SC", cursive;
+}
+
+.hero-name {
+  font-family: "Sansita Swashed", cursive;
+
+  font-size: 4rem;
+  font-weight: 800;
+}
+
+/* EXPERIENCES Styles */
+
+.experiences {
+  /* height: 90%; */
+  padding: 80px 0;
+  background-color: #171717;
+}
+
+.exp-flexbox {
+  column-gap: 40px;
+}
+
+.exp-flex-item {
+  flex: 1;
+  text-align: center;
+  padding: 40px;
+  color: #171717;
+  background-color: #777777;
+  border-radius: 20px;
+}
+
+.exp-flex-2 {
+  flex: 2;
+}
+
+.exp-icon {
+  color: #217312;
+  font-size: 5rem;
+  width: 5rem;
+  filter: drop-shadow(0.2rem 0.2rem 0.2rem #171717);
+}
+
+.exp-date {
+  font-size: 1.4rem;
+  font-weight: 700;
+  font-family: "Sansita Swashed", cursive;
+  margin: 10px auto;
+}
+
+.exp-title {
+  font-family: "Patrick Hand", cursive;
+  font-weight: 400;
+  font-size: 1.2rem;
+  margin: 10px auto;
+}
+
+.exp-text {
+  line-height: 1.6;
+}
+
+/* EDUCATION Styles */
+
+.education {
+  padding: 80px 0;
+  background-color: #575757;
+}
+
+.edu-flexbox {
+  column-gap: 40px;
+}
+
+.edu-flex-item {
+  flex: 1;
+  text-align: center;
+  padding: 40px;
+  border-radius: 20px;
+  color: #e7e7e7;
+  background-color: #171717;
+}
+
+.edu-flex-2 {
+  flex: 2;
+}
+
+.edu-icon {
+  color: #217312;
+
+  font-size: 5rem;
+  width: 5rem;
+  filter: brightness(0) saturate(100%) invert(34%) sepia(10%) saturate(3696%)
+    hue-rotate(66deg) brightness(99%) contrast(94%)
+    drop-shadow(0.2rem 0.2rem 0.2rem #070707);
+}
+
+.edu-date {
+  font-size: 1.4rem;
+  font-weight: 700;
+  font-family: "Sansita Swashed", cursive;
+  margin: 10px auto;
+}
+
+.edu-title {
+  font-family: "Patrick Hand", cursive;
+  font-weight: 400;
+  font-size: 1.2rem;
+  margin: 10px auto;
+}
+
+.edu-text {
+  line-height: 1.6;
+}
+
+/* FOOTER Styles */
+
+footer {
+  background-color: #171717;
+}
+
+.footer-flex {
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 0;
+  color: #e7e7e7;
+}
+
+.footer-logo {
+  margin-bottom: 20px;
+}
+
+.footer-social {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 10px;
+  padding: 10px 0;
+}
+
+.footer-link,
+.footer-link:visited,
+.footer-link:focus {
+  color: #e7e7e7;
+}
+
+.footer-link:hover {
+  color: #217312;
+}

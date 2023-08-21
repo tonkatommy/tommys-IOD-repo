@@ -35,6 +35,13 @@ h2 {
   margin: 0 auto;
 }
 
+.container-flex-nav {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
 /* NAVBAR Styles */
 
 .navbar {
@@ -55,7 +62,6 @@ h2 {
   padding: 0;
   color: #e7e7e7;
   font-family: "Patrick Hand SC", cursive;
-  font-size: 1.5rem;
 }
 
 .nav-item {
@@ -90,7 +96,6 @@ h2 {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  height: 90vh;
 }
 
 .hero-text {
@@ -103,14 +108,11 @@ h2 {
 }
 
 .hero-subtext {
-  font-size: 1.6rem;
   font-family: "Patrick Hand SC", cursive;
 }
 
 .hero-name {
   font-family: "Sansita Swashed", cursive;
-
-  font-size: 4rem;
   font-weight: 800;
 }
 
@@ -184,9 +186,9 @@ h2 {
   background-color: #171717;
 }
 
-.edu-flex-2 {
+/* .edu-flex-2 {
   flex: 2;
-}
+} */
 
 .edu-icon {
   color: #217312;
@@ -248,4 +250,92 @@ footer {
 
 .footer-link:hover {
   color: #217312;
+}
+
+/* MEDIA QUERIES */
+/* Extra Small */
+@media (min-width: 0px) {
+  .container-flex {
+    flex-flow: column nowrap;
+    row-gap: 40px;
+  }
+  .container-flex-nav {
+    flex-flow: column wrap;
+    align-items: center;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.3rem;
+  }
+  .hero-bg {
+    height: 40vh;
+  }
+  .hero-name {
+    font-size: 3rem;
+  }
+  .hero-subtext {
+    font-size: 1.2rem;
+  }
+  p {
+    font-size: 0.9rem;
+  }
+}
+/* Small */
+@media (min-width: 576px) {
+  /* .container-flex-nav {
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+  } */
+}
+/* Medium */
+@media (min-width: 768px) {
+  .container-flex {
+    flex-flow: row wrap;
+    row-gap: 40px;
+  }
+  .container-flex-nav {
+    flex-flow: row wrap;
+  }
+  .nav-links {
+    flex-direction: row;
+    align-items: flex-end;
+    font-size: 1.5rem;
+  }
+  .hero-bg {
+    height: 60vh;
+  }
+  .hero-name {
+    font-size: 4rem;
+  }
+  .hero-subtext {
+    font-size: 1.6rem;
+  }
+  .exp-flex-2 {
+    flex-basis: 100%;
+  }
+  .edu-flex-2 {
+    flex-basis: 100%;
+  }
+}
+/* Large */
+@media (min-width: 992px) {
+  .container-flex {
+    flex-flow: row nowrap;
+  }
+  .hero-bg {
+    height: 90vh;
+  }
+  .exp-flex-2 {
+    flex: 2;
+  }
+  .edu-flex-2 {
+    flex: 2;
+  }
 }

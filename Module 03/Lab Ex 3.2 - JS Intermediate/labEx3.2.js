@@ -217,6 +217,7 @@ console.log(currencyOperation(11.3, 4.9, "/", 6));
 //    include duplicates. Your function should return an array containing only the unique values
 //    from duplicatesArray.
 //    Test with the following arrays and create another one of your own.
+console.log("\nLab Ex 3.2 Step 6. Output:");
 const colours = [
   "red",
   "green",
@@ -242,6 +243,7 @@ console.log(unique(testScores)); // [ 55, 84, 97, 63, 32, 91, 43 ]
 
 // 7. Use the following array of book objects to practice the array functions for map, find and
 //    filter. Test each of your answers to the below tasks.
+console.log("\nLab Ex 3.2 Step 7. Output:");
 const books = [
   {
     id: 1,
@@ -261,31 +263,92 @@ const books = [
 ];
 // a) Write a function getBookTitle(bookId) that uses the find function to return the
 //    title of the book object with the matching id.
+const getBookTitle = (bookId) => {
+  return books.find(({ id }) => id === bookId).title;
+};
+console.log("a): " + getBookTitle(2));
+
 // b) Write a function getOldBooks() that uses the filter function to return all book
 //    objects written before 1950.
+const getOldBooks = () => {
+  return books.filter((book) => book.year < 1950);
+};
+console.log("b): array of objects: ");
+console.log(getOldBooks());
+
 // c) Write a function addGenre() that uses the map function to add a new genre property
 //    to all of the above books, with the value ‘classic’.
+const addGenre = () => {
+  books.map((book) => (book.genre = "classic"));
+};
+addGenre();
+console.log("c): books after calling addGenre(): ");
+console.log(books);
+
 // d) (Extension) Write a function getTitles(authorInitial) that uses map and
 //    filter together to return an array of book titles for books written by authors whose
 //    names start with authorInitial.
+const getTitles = (authInit) => {
+  return books.filter((book) => book.author.charAt(0) == authInit);
+};
+console.log('d): getTitles("F"): ');
+console.log(getTitles("F"));
+
 // e) (Extension) Write a function latestBook() that uses find and forEach to get the
 //    book with the most recent publication date.
+const latestBook = () => {
+  let youngestBook = 0;
+  books.forEach((book) => {
+    if (book.year > youngestBook) {
+      youngestBook = book.year;
+    }
+  });
+  return books.find(({ year }) => year == youngestBook);
+};
+console.log("e): lastestBook():");
+console.log(latestBook());
 
 // **********************************************************
 
 // 8. The following code creates a new Map object for storing names beginning with A, B, or C
 //    with their phone numbers.
+console.log("\nLab Ex 3.2 Step 8. Output:");
 const phoneBookABC = new Map(); //an empty map to begin with
 phoneBookABC.set("Annabelle", "0412312343");
 phoneBookABC.set("Barry", "0433221117");
 phoneBookABC.set("Caroline", "0455221182");
+console.log("Original Map:");
+console.log(phoneBookABC);
 // a) Create a new phoneBookDEF Map to store names beginning with D, E or F
+const phoneBookDEF = new Map(); //an empty map to begin with
 // b) Initialise the contents of phoneBookDEF by passing in an array of keys/values
+phoneBookDEF.set("Dan", "021586958");
+phoneBookDEF.set("Erik", "022654789");
+phoneBookDEF.set("Frank", "0275849565");
+console.log("a) & b): new Map() phoneBookDEF:");
+console.log(phoneBookDEF);
 // c) Update the phone number for Caroline
+phoneBookABC.set("Caroline", "0201234567");
+console.log("c): changed Caroline's number:");
+console.log(phoneBookABC);
 // d) Write a function printPhoneBook(contacts) that prints the names and phone
 //    numbers in the given Map
+const printPhoneBook = (contacts) => {
+  console.log("\n*** Phone Book Entries ***\n");
+  let i = 1;
+  contacts.forEach((value, key, map) => {
+    console.log(i + " " + key + " " + value);
+    i++;
+  });
+  console.log("\n");
+};
+console.log("d): Print Phone Book:");
+printPhoneBook(phoneBookABC);
 // e) Combine the contents of the two individual Maps into a single phoneBook Map
+const masterPhBk = new Map([...phoneBookABC, ...phoneBookDEF]);
 // f) Print out the full list of names in the combined phone book
+console.log("e) & f): Combine & Print Phone Book:");
+printPhoneBook(masterPhBk);
 
 // **********************************************************
 

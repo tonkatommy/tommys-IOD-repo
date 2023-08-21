@@ -79,11 +79,11 @@ console.log(
 //    regardless of upper/lower case.
 const animals = ["Tiger", "Giraffe"];
 console.log("\nLab Ex 3.2 Step 3. Output:");
-console.log(animals);
+console.log("Original Array: " + animals);
 animals.push("Dog", "Leopard");
-console.log(animals);
+console.log("After .push: " + animals);
 animals.unshift("Cat", "Lynx");
-console.log(animals);
+console.log("After .unshift: " + animals);
 
 const replaceMiddleAnimal = (newValue) => {
   animals[animals.length / 2] = newValue; // Won't work with all array lengths
@@ -91,7 +91,7 @@ const replaceMiddleAnimal = (newValue) => {
 
 replaceMiddleAnimal("Zebra");
 
-console.log(animals);
+console.log("After replaceMiddleAnimal: " + animals);
 const foundAnimals = [];
 const findAnimals = (beginsWith) => {
   for (let i = 0; i < animals.length; i++) {
@@ -102,7 +102,7 @@ const findAnimals = (beginsWith) => {
 };
 
 findAnimals("L");
-console.log(foundAnimals);
+console.log("foundAnimals Array: " + foundAnimals);
 
 // **********************************************************
 
@@ -112,38 +112,104 @@ console.log(foundAnimals);
 //    dash.
 // b) Create variants of the camelCase function that use different types of for loops, and
 // c) with and without the conditional operator.
+
+console.log("\nLab Ex 3.2 Step 4. Output:");
+
+// Most efficient way to produce camelCase:
+// const camelCase = (cssProp) => {
+//   return cssProp.replace(/[-_](.)/g, (_, char) => char.toUpperCase());
+// };
+
+// Spliting the text into an array, then creating a newWord by concatenating
+// each element starting at index 1
+// const camelCase = (cssProp) => {
+//   let splitText = cssProp.split("-");
+//   let newWord = splitText[0];
+//   for (let i = 1; i < splitText.length; i++) {
+//     newWord =
+//       newWord + splitText[i].charAt(0).toUpperCase() + splitText[i].slice(1);
+//   }
+//   return newWord;
+// };
+
+// Using a for loop to iterate over each char in the string
+const camelCase = (cssProp) => {
+  let newWord = "";
+  for (let i = 0; i < cssProp.length; i++) {
+    if (cssProp[i] == "-") {
+      newWord = newWord + cssProp[i + 1].toUpperCase();
+      i++;
+    } else {
+      newWord += cssProp[i];
+    }
+  }
+  return newWord;
+};
+
 console.log(camelCase("margin-left")); // marginLeft
 console.log(camelCase("background-image")); // backgroundImage
 console.log(camelCase("display")); // display
+console.log(camelCase("display-top-nav-collapse")); // display
 
 // **********************************************************
 
 // 5. Decimal number operations in JavaScript can lead to unexpected results, as in the
 //    following:
+console.log("\nLab Ex 3.2 Step 5. Output:");
 let twentyCents = 0.2;
 let tenCents = 0.1;
 console.log(`${twentyCents} + ${tenCents} = ${twentyCents + tenCents}`);
-// 0.2 + 0.1 = 0.30000000000000004
-// We can sometimes avoid this using the toFixed function to force the number of decimal
-// places as below, but it’s not always useful:
+//    0.2 + 0.1 = 0.30000000000000004
+//    We can sometimes avoid this using the toFixed function to force the number of decimal
+//    places as below, but it’s not always useful:
 let fixedTwenty = twentyCents.toFixed(2);
 let fixedTen = tenCents.toFixed(2);
 console.log(fixedTwenty + fixedTen); //why is this not working?
 // a) Explain why the above code returns the wrong answer
+
+//    The .toFixed() function returns a string value. "+" operator in this instance will
+//    concatenate the 2 strings rather than add the 2 numbers.
+
 // b) Create a function currencyAddition(float1, float2) which safely adds the two
 //    decimal numbers float1 and float2 and returns the correct float result.
+const currencyAddition = (float1, float2) => {
+  return Number.parseFloat(float1 + float2).toFixed(2);
+};
+
 // c) Create a function currencyOperation(float1, float2, operation) which
 //    safely performs the given operation (either +, -, / or *) on the two numbers and returns
-
-// the correct float result. https://developer.mozilla.org/en-
-// US/docs/Web/JavaScript/Reference/Statements/switch may be useful.
+//    the correct float result. https://developer.mozilla.org/en-
+//    US/docs/Web/JavaScript/Reference/Statements/switch may be useful.
+function currencyOperation(float1, float2, operation, numDecimals) {
+  let floatResult;
+  switch (operation) {
+    case "+": {
+      floatResult = float1 + float2;
+      break;
+    }
+    case "-": {
+      floatResult = float1 - float2;
+      break;
+    }
+    case "*": {
+      floatResult = float1 * float2;
+      break;
+    }
+    case "/": {
+      floatResult = float1 / float2;
+      break;
+    }
+  }
+  return Number.parseFloat(floatResult).toFixed(numDecimals);
+}
 
 // d) (Extension) Extend the above function to include a fourth argument numDecimals
 //    which allows the operation to support different amounts of decimal places from 1 to 10.
 // HINT: Assume 2 decimal places for b) and c) and use a multiplication factor. Test with
 // different values as well as the below:
 console.log(0.3 == currencyAddition(0.1, 0.2)); // true
-console.log(0.3 == currencyOperation(0.1, 0.2, "+")); // true
+console.log(0.3 == currencyOperation(0.1, 0.2, "+", 2)); // true
+console.log(currencyOperation(11.3, 4.9, "/", 6));
 
 // **********************************************************
 
@@ -162,6 +228,13 @@ const colours = [
   "yellow",
 ];
 const testScores = [55, 84, 97, 63, 55, 32, 84, 91, 55, 43];
+
+function unique(dupesArray) {
+  return dupesArray.filter(
+    (value, index, arry) => arry.indexOf(value) === index
+  );
+}
+
 console.log(unique(colours)); // [ 'red', 'green', 'blue', 'yellow', 'orange' ]
 console.log(unique(testScores)); // [ 55, 84, 97, 63, 32, 91, 43 ]
 

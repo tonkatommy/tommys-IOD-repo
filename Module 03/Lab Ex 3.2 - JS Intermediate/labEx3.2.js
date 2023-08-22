@@ -450,13 +450,13 @@ console.log(`I'm ${myYears} years, ${myMonths} months and ${myDays} days old`);
 console.log("d): days between 23/5/2020 - 7/3/2023:");
 
 const daysBetween = (date1, date2) => {
-  return (date2.getTime() - date1.getTime()) / (1000 * 3600 * 24);
+  return (date2.getTime() - date1.getTime()) / (1000 * 3600 * 24); // 1 day = (1000 * 60 * 60 * 24)
 };
 
 const date1 = new Date(2020, 4, 23);
 const date2 = new Date(2023, 2, 7);
-
 console.log(Math.round(daysBetween(date1, date2)));
+
 console.log("d): days between 23/5/2020 - 24/5/2020:");
 console.log(
   Math.round(daysBetween(new Date(2020, 4, 23), new Date(2020, 4, 24)))

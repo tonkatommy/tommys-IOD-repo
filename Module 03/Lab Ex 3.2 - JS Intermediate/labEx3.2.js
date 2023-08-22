@@ -360,19 +360,104 @@ let salaries = {
   Christina: 75000,
   James: 43000,
 };
+console.log("\nLab Ex 3.2 Step 9. Output:");
 // a) Write a function sumSalaries(salaries) that calculates and returns the total of all salaries
+const sumSalaries = (salaries) => {
+  return Object.values(salaries).reduce((total, salary) => total + salary, 0);
+};
+console.log("a): Total of all salaries: ");
+console.log("Total: $" + sumSalaries(salaries));
+
+// console.log(salaries);
+
 // b) Write a function topEarner(salaries) that calculates and returns the name of the person
 //    earning the highest salary
+const topEarner = (salaries) => {
+  let topPay = Object.values(salaries).reduce((total, salary) => {
+    if (salary > total) {
+      return total + (salary - total);
+    } else {
+      return total;
+    }
+  }, 0);
+  return Object.keys(salaries).find((salary) => salaries[salary] == topPay);
+};
+console.log("b): Top Earner:");
+console.log(topEarner(salaries));
 
 // **********************************************************
 
 // 10. The following code uses the Date object to print the current time and the number of hours
 //     that have passed today so far. Extend the code to do the following:
+console.log("\nLab Ex 3.2 Step 10. Output:");
 const today = new Date();
 console.log("Current time is " + today.toLocaleTimeString());
 console.log(today.getHours() + " hours have passed so far today");
 // a) Print the total number of minutes that have passed so far today
+console.log("a): minutes:");
+console.log(
+  today.getMinutes() +
+    today.getHours() * 60 +
+    " minutes have passed so far today"
+);
 // b) Print the total number of seconds that have passed so far today
+console.log("b): seconds:");
+console.log(
+  today.getMinutes() * 60 +
+    today.getHours() * 60 * 60 +
+    today.getSeconds() +
+    " seconds have passed so far today"
+);
 // c) Calculate and print your age as: 'I am x years, y months and z days old'
+console.log("c): age, months, days, years:");
+// Create a new Date object for my DOB:
+const myDOB = new Date(1985, 9, 2);
+// console.log(myDOB.toString());
+
+// save todays values in variables
+let ty = today.getFullYear();
+let tm = today.getMonth() + 1; // month is zero indexed
+let td = today.getDate();
+// save myDOB values in variables
+let by = myDOB.getFullYear();
+let bm = myDOB.getMonth() + 1;
+let bd = myDOB.getDate();
+// declare result variables
+let myYears;
+let myMonths;
+let myDays;
+
+// logic to calculate days
+if (td < bd) {
+  myDays = td - bd + 30;
+  tm--;
+} else {
+  myDays = td - bd;
+}
+
+if (tm < bm) {
+  myMonths = tm - bm + 12;
+  ty--;
+} else {
+  myMonths = tm - bm;
+}
+
+myYears = ty - by;
+
+console.log(`I'm ${myYears} years, ${myMonths} months and ${myDays} days old`);
 // d) Write a function daysInBetween(date1, date2) which calculates and returns the amount
 //    of days in between the two given dates.
+console.log("d): days between 23/5/2020 - 7/3/2023:");
+
+const daysBetween = (date1, date2) => {
+  return (date2.getTime() - date1.getTime()) / (1000 * 3600 * 24);
+};
+
+const date1 = new Date(2020, 4, 23);
+const date2 = new Date(2023, 2, 7);
+
+console.log(Math.round(daysBetween(date1, date2)));
+console.log("d): days between 23/5/2020 - 24/5/2020:");
+console.log(
+  Math.round(daysBetween(new Date(2020, 4, 23), new Date(2020, 4, 24)))
+);

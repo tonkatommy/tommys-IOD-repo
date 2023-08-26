@@ -303,7 +303,7 @@ const latestBook = () => {
       youngestBook = book.year;
     }
   });
-  return books.find(({ year }) => year == youngestBook);
+  return books.find((book) => book.year == youngestBook);
 };
 console.log("e): lastestBook():");
 console.log(latestBook());
@@ -434,15 +434,20 @@ if (td < bd) {
 } else {
   myDays = td - bd;
 }
+// myDays = Math.round((today - myDOB) / (1000 * 3600 * 24)); // 1 day = (1000 * 60 * 60 * 24)
 
+// logic to calculate months
 if (tm < bm) {
   myMonths = tm - bm + 12;
   ty--;
 } else {
   myMonths = tm - bm;
 }
+// myMonths = Math.round((today - myDOB) / ((1000 * 3600 * 24 * 365) / 12)); // 1 month = (1000 * 60 * 60 * 24 * 365) / 12
 
+// years
 myYears = ty - by;
+// myYears = Math.floor((today - myDOB) / (1000 * 3600 * 24 * 365)); // 1 year = (1000 * 60 * 60 * 24 * 365)
 
 console.log(`I'm ${myYears} years, ${myMonths} months and ${myDays} days old`);
 // d) Write a function daysInBetween(date1, date2) which calculates and returns the amount
@@ -450,7 +455,7 @@ console.log(`I'm ${myYears} years, ${myMonths} months and ${myDays} days old`);
 console.log("d): days between 23/5/2020 - 7/3/2023:");
 
 const daysBetween = (date1, date2) => {
-  return (date2.getTime() - date1.getTime()) / (1000 * 3600 * 24); // 1 day = (1000 * 60 * 60 * 24)
+  return (date2 - date1) / (1000 * 3600 * 24); // 1 day = (1000 * 60 * 60 * 24)
 };
 
 const date1 = new Date(2020, 4, 23);
@@ -460,4 +465,9 @@ console.log(Math.round(daysBetween(date1, date2)));
 console.log("d): days between 23/5/2020 - 24/5/2020:");
 console.log(
   Math.round(daysBetween(new Date(2020, 4, 23), new Date(2020, 4, 24)))
+);
+
+console.log("d): days between 23/5/2020 - 24/2/2020:");
+console.log(
+  Math.round(daysBetween(new Date(2020, 4, 23), new Date(2020, 1, 24)))
 );

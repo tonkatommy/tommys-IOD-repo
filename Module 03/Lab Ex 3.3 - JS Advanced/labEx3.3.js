@@ -263,84 +263,154 @@
 // *******************************************************************************************
 // 8. The following DigitalClock class uses an interval to print the time every second once
 //    started, until stopped.
-class DigitalClock {
-  constructor(prefix) {
-    this.prefix = prefix;
-  }
-  display() {
-    let date = new Date();
-    //create 3 variables in one go using array destructuring
-    let [hours, mins, secs] = [
-      date.getHours(),
-      date.getMinutes(),
-      date.getSeconds(),
-    ];
-    if (hours < 10) hours = "0" + hours;
-    if (mins < 10) mins = "0" + mins;
-    if (secs < 10) secs = "0" + secs;
-    console.log(`${this.prefix} ${hours}:${mins}:${secs}`);
-  }
-  stop() {
-    clearInterval(this.timer);
-  }
-  start() {
-    this.display();
-    this.timer = setInterval(() => this.display(), 1000);
-  }
-}
-const myClock = new DigitalClock("my clock:");
-myClock.start();
-// a) Create a new class PrecisionClock that inherits from DigitalClock and adds the
-//    parameter precision – the number of ms between 'ticks'. This precision parameter
-//    should default to 1 second if not supplied.
-
-// b) Create a new class AlarmClock that inherits from DigitalClock and adds the
-//    parameter wakeupTime in the format hh:mm. When the clock reaches this time, it
-//    should print a 'Wake Up' message and stop ticking. This wakeupTime parameter should
-//    default to 07:00 if not supplied.
-
-// *******************************************************************************************
-// // 9. We can delay execution of a function using setTimeout, where we need to provide both
-// //    the callback function and the delay after which it should execute.
-// // a) Create a promise-based alternative randomDelay() that delays execution for a
-// //    random amount of time (between 1 and 20 seconds) and returns a promise we can use
-// //    via .then(), as in the starter code below
-// // b) If the random delay is even, consider this a successful delay and resolve the promise,
-// //    and if the random number is odd, consider this a failure and reject it
-// // c) Update the testing code to catch rejected promises and print a different message
-// // d) Try to update the then and catch messages to include the random delay value
-// function randomDelay() {
-//   // your code
+// class DigitalClock {
+//   constructor(prefix) {
+//     this.prefix = prefix;
+//   }
+//   display() {
+//     let date = new Date();
+//     //create 3 variables in one go using array destructuring
+//     let [hours, mins, secs] = [
+//       date.getHours(),
+//       date.getMinutes(),
+//       date.getSeconds(),
+//     ];
+//     if (hours < 10) hours = "0" + hours;
+//     if (mins < 10) mins = "0" + mins;
+//     if (secs < 10) secs = "0" + secs;
+//     console.log(`${this.prefix} ${hours}:${mins}:${secs}`);
+//   }
+//   stop() {
+//     clearInterval(this.timer);
+//   }
+//   start() {
+//     this.display();
+//     this.timer = setInterval(() => this.display(), 1000);
+//   }
 // }
-// randomDelay().then(() => console.log("There appears to have been a delay."));
+// const myClock = new DigitalClock("my clock:");
+// // myClock.start();
 
-// *******************************************************************************************
-// // 10.Fetch is a browser-based function to send a request and receive a response from a server,
-// //    which uses promises to handle the asynchronous response.
-// //    The below fetchURLData uses fetch to check the response for a successful status
-// //    code, and returns a promise containing the JSON sent by the remote server if successful
-// //    or an error if it failed. (To run this code in a node.js environment, follow the instructions in
-// //    the comments before the function.)
-// // a) Write a new version of this function using async/await
-// // b) Test both functions with valid and invalid URLs
-// // c) (Extension) Extend your new function to accept an array of URLs and fetch all of them,
-// //    using Promise.all to combine the results.
+// // a) Create a new class PrecisionClock that inherits from DigitalClock and adds the
+// //    parameter precision – the number of ms between 'ticks'. This precision parameter
+// //    should default to 1 second if not supplied.
 
-// //    run 'npm init' and accept all the defaults
-// //    run 'npm install node-fetch'
-// //    add this line to package.json after line 5: "type": "module",
-// //    import fetch from "node-fetch";
-// globalThis.fetch = fetch;
-// function fetchURLData(url) {
-//   let fetchPromise = fetch(url).then((response) => {
-//     if (response.status === 200) {
-//       return response.json();
-//     } else {
-//       throw new Error(`Request failed with status ${response.status}`);
+// class PrecisionClock extends DigitalClock {
+//   constructor(prefix, precision = 1000) {
+//     super(prefix);
+//     this.precision = precision;
+//   }
+//   start() {
+//     this.display();
+//     this.timer = setInterval(() => this.display(), this.precision);
+//   }
+// }
+
+// const myPreciseClock = new PrecisionClock("My Precise Clock: ", 500);
+// // myPreciseClock.start();
+
+// // b) Create a new class AlarmClock that inherits from DigitalClock and adds the
+// //    parameter wakeupTime in the format hh:mm. When the clock reaches this time, it
+// //    should print a 'Wake Up' message and stop ticking. This wakeupTime parameter should
+// //    default to 07:00 if not supplied.
+
+// class AlarmClock extends DigitalClock {
+//   constructor(prefix, wakeUpTime = "07:00") {
+//     super(prefix);
+//     this.wakeUpTime = wakeUpTime;
+//   }
+//   display() {
+//     let date = new Date();
+//     //create 3 variables in one go using array destructuring
+//     let [hours, mins, secs] = [
+//       date.getHours(),
+//       date.getMinutes(),
+//       date.getSeconds(),
+//     ];
+//     if (hours < 10) hours = "0" + hours;
+//     if (mins < 10) mins = "0" + mins;
+//     if (secs < 10) secs = "0" + secs;
+
+//     console.log(`${this.prefix} ${hours}:${mins}:${secs}`);
+
+//     if (`${hours}:${mins}` === this.wakeUpTime) {
+//       this.wakeUp();
 //     }
-//   });
-//   return fetchPromise;
+//   }
+//   wakeUp() {
+//     console.log(`WAKE UP TIME!!!`);
+//     this.stop();
+//   }
 // }
-// fetchURLData("https://jsonplaceholder.typicode.com/todos/1")
-//   .then((data) => console.log(data))
-//   .catch((error) => console.error(error.message));
+
+// const myAlarmClock = new AlarmClock("My Alarm Clock: ", "13:50");
+// myAlarmClock.start();
+
+// *******************************************************************************************
+// 9. We can delay execution of a function using setTimeout, where we need to provide both
+//    the callback function and the delay after which it should execute.
+// a) Create a promise-based alternative randomDelay() that delays execution for a
+//    random amount of time (between 1 and 20 seconds) and returns a promise we can use
+//    via .then(), as in the starter code below
+// b) If the random delay is even, consider this a successful delay and resolve the promise,
+//    and if the random number is odd, consider this a failure and reject it
+// c) Update the testing code to catch rejected promises and print a different message
+// d) Try to update the then and catch messages to include the random delay value
+// function randomDelay() {
+//   const randTime = Math.floor(Math.random() * 20000);
+
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       if (randTime % 2 === 0) {
+//         resolve(randTime);
+//       } else {
+//         reject(randTime);
+//       }
+//     }, randTime);
+//   });
+// }
+// randomDelay()
+//   .then((num) =>
+//     console.log(
+//       `There appears to have been a delay of ${num / 1000} seconds.. PASSED!`
+//     )
+//   )
+//   .catch((num) =>
+//     console.log(
+//       `There appears to have been a delay of ${num / 1000} seconds.. FAILED!`
+//     )
+//   );
+
+// *******************************************************************************************
+// 10.Fetch is a browser-based function to send a request and receive a response from a server,
+//    which uses promises to handle the asynchronous response.
+//    The below fetchURLData uses fetch to check the response for a successful status
+//    code, and returns a promise containing the JSON sent by the remote server if successful
+//    or an error if it failed. (To run this code in a node.js environment, follow the instructions in
+//    the comments before the function.)
+// a) Write a new version of this function using async/await
+// b) Test both functions with valid and invalid URLs
+// c) (Extension) Extend your new function to accept an array of URLs and fetch all of them,
+//    using Promise.all to combine the results.
+
+//    run 'npm init' and accept all the defaults
+//    run 'npm install node-fetch'
+//    add this line to package.json after line 5: "type": "module",
+
+import fetch from "node-fetch";
+globalThis.fetch = fetch;
+
+function fetchURLData(url) {
+  let fetchPromise = fetch(url).then((response) => {
+    if (response.status === 200) {
+      return response.json();
+    } else {
+      throw new Error(`Request failed with status ${response.status}`);
+    }
+  });
+  return fetchPromise;
+}
+
+fetchURLData("https://jsonplaceholder.typicode.com/todos/1")
+  .then((data) => console.log(data))
+  .catch((error) => console.error(error.message));

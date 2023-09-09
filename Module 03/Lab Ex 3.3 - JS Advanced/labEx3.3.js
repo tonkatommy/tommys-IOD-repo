@@ -28,6 +28,7 @@
 
 // console.log("\nLab Ex 3.3 Step 2. Output: ");
 
+// *******************************************************************************************
 // // 2. The following delayMsg function is intended to be used to delay printing a message until
 // //    some time has passed.
 // // a) What order will the four tests below print in? Why?
@@ -45,6 +46,7 @@
 
 // console.log("\nLab Ex 3.3 Step 3. Output: ");
 
+// *******************************************************************************************
 // // 3. 'Debouncing' is a concept that refers to 'putting off' the execution of multiple, fast-timed,
 // //    similar requests until there's a brief pause, then only executing the most recent of those
 // //    requests. See https://www.techtarget.com/whatis/definition/debouncing
@@ -80,6 +82,7 @@
 // setTimeout(printMe, 200, "2nd debounce message");
 // setTimeout(printMe, 300, "3rd debounce message");
 
+// *******************************************************************************************
 // console.log("\nLab Ex 3.3 Step 4. Output: ");
 // // 4. The Fibonacci sequence of numbers is a famous pattern where the next number in the
 // //    sequence is the sum of the previous 2.
@@ -113,6 +116,7 @@
 
 // const printFibTimeOuts = () => {};
 
+// *******************************************************************************************
 // // 5. The following car object has several properties and a method which uses them to print a
 // //    description. When calling the function normally this works as expected, but using it from
 // //    within setTimeout fails. Why?
@@ -149,12 +153,28 @@
 // let car3 = { ...car, year: 3232 };
 // setTimeout(boundCar, 1800);
 
+// *******************************************************************************************
 // 6. Use the Function prototype to add a new delay(ms) function to all functions, which can
 //    be used to delay the call to that function by ms milliseconds.
-function multiply(a, b) {
-  console.log(a * b);
-}
-multiply.delay(500)(5, 5); // prints 25 after 500 milliseconds
+// function multiply(a, b, c, d) {
+//   console.log(a * b * c * d);
+// }
+
+// Function.prototype.delay = function (ms) {
+//   const context = this;
+//   return function () {
+//     setTimeout(
+//       (args, fn) => {
+//         context.apply(fn, args);
+//       },
+//       ms,
+//       arguments,
+//       context
+//     );
+//   };
+// };
+
+// multiply.delay(1000)(5, 5, 2, 10); // prints 25 after 500 milliseconds
 // a) Use the example multiply function below to test it with, as above, and assume that all
 //    delayed functions will take two parameters
 // b) Use apply to improve your solution so that delayed functions can take any number of
@@ -162,66 +182,124 @@ multiply.delay(500)(5, 5); // prints 25 after 500 milliseconds
 // c) Modify multiply to take 4 parameters and multiply all of them, and test that your
 //    delay prototype function still works.
 
-// // 7. In JavaScript, the toString method is used to convert an object to a string representation.
-// //    By default, when an object is converted to a String, it returns a string that looks something
-// //    like [object Object].
-// //    However, we can define our own toString methods for custom objects to provide a more
-// //    meaningful string representation.
-// // a) Define a custom toString method for the Person object that will format and print
-// //    their details
-// // b) Test your method by creating 2 different people using the below constructor function
-// //    and printing them
-// // c) Create a new constructor function Student that uses call to inherit from Person and
-// //    add an extra property cohort
+// *******************************************************************************************
+// 7. In JavaScript, the toString method is used to convert an object to a string representation.
+//    By default, when an object is converted to a String, it returns a string that looks something
+//    like [object Object].
+//    However, we can define our own toString methods for custom objects to provide a more
+//    meaningful string representation.
 
-// // d) Add a custom toString for Student objects that formats and prints their details. Test
-// //    with 2 students.
 // function Person(name, age, gender) {
 //   this.name = name;
 //   this.age = age;
 //   this.gender = gender;
 // }
+
+// // a) Define a custom toString method for the Person object that will format and print
+// //    their details
+
+// Person.prototype.toString = function () {
+//   const { name, age, gender } = this;
+//   return `${name}, ${age}, ${gender}`;
+// };
+
 // const person1 = new Person("James Brown", 73, "male");
 // console.log("person1: " + person1); //prints person1: [object Object]
 
-// // 8. The following DigitalClock class uses an interval to print the time every second once
-// //    started, until stopped.
-// class DigitalClock {
-//   constructor(prefix) {
-//     this.prefix = prefix;
-//   }
-//   display() {
-//     let date = new Date();
-//     //create 3 variables in one go using array destructuring
-//     let [hours, mins, secs] = [
-//       date.getHours(),
-//       date.getMinutes(),
-//       date.getSeconds(),
-//     ];
-//     if (hours < 10) hours = "0" + hours;
-//     if (mins < 10) mins = "0" + mins;
-//     if (secs < 10) secs = "0" + secs;
-//     console.log(`${this.prefix} ${hours}:${mins}:${secs}`);
-//   }
-//   stop() {
-//     clearInterval(this.timer);
-//   }
-//   start() {
-//     this.display();
-//     this.timer = setInterval(() => this.display(), 1000);
-//   }
+// // b) Test your method by creating 2 different people using the below constructor function
+// //    and printing them
+
+// const person2 = new Person("Tommy Goodman", 37, "Male");
+// console.log("person2: " + person2); //prints person1: [object Object]
+
+// const person3 = new Person("Diana Prince", 26, "male");
+// console.log("person3: " + person3); //prints person1: [object Object]
+
+// // c) Create a new constructor function Student that uses call to inherit from Person and
+// //    add an extra property cohort
+
+// function Student(name, age, gender, cohort) {
+//   Person.call(this, age, name, gender);
+//   this.cohort = cohort;
 // }
-// const myClock = new DigitalClock("my clock:");
-// myClock.start();
-// // a) Create a new class PrecisionClock that inherits from DigitalClock and adds the
-// //    parameter precision – the number of ms between 'ticks'. This precision parameter
-// //    should default to 1 second if not supplied.
 
-// // b) Create a new class AlarmClock that inherits from DigitalClock and adds the
-// //    parameter wakeupTime in the format hh:mm. When the clock reaches this time, it
-// //    should print a 'Wake Up' message and stop ticking. This wakeupTime parameter should
-// //    default to 07:00 if not supplied.
+// // d) Add a custom toString for Student objects that formats and prints their details. Test
+// //    with 2 students.
 
+// Student.prototype.toString = function () {
+//   const { name, age, gender, cohort } = this;
+//   return `${name}, ${age}, ${gender}, ${cohort}`;
+// };
+
+// const student1 = new Student(
+//   "Ottilie Piddock",
+//   30,
+//   "Female",
+//   "Canadian Sudanese College"
+// );
+// console.log("Student1: " + student1); //prints person1: [object Object]
+// const student2 = new Student(
+//   "Alexa Adamsson",
+//   43,
+//   "Female",
+//   "Institute of Teachers Education"
+// );
+// console.log("Student2: " + student2); //prints person1: [object Object]
+// const student3 = new Student(
+//   "Baxie Lane",
+//   22,
+//   "Male",
+//   "Northwestern University"
+// );
+// console.log("Student3: " + student3); //prints person1: [object Object]
+// const student4 = new Student(
+//   "Brittaney Swindlehurst",
+//   32,
+//   "Female",
+//   "Kitasato University"
+// );
+// console.log("Student4: " + student4); //prints person1: [object Object]
+
+// *******************************************************************************************
+// 8. The following DigitalClock class uses an interval to print the time every second once
+//    started, until stopped.
+class DigitalClock {
+  constructor(prefix) {
+    this.prefix = prefix;
+  }
+  display() {
+    let date = new Date();
+    //create 3 variables in one go using array destructuring
+    let [hours, mins, secs] = [
+      date.getHours(),
+      date.getMinutes(),
+      date.getSeconds(),
+    ];
+    if (hours < 10) hours = "0" + hours;
+    if (mins < 10) mins = "0" + mins;
+    if (secs < 10) secs = "0" + secs;
+    console.log(`${this.prefix} ${hours}:${mins}:${secs}`);
+  }
+  stop() {
+    clearInterval(this.timer);
+  }
+  start() {
+    this.display();
+    this.timer = setInterval(() => this.display(), 1000);
+  }
+}
+const myClock = new DigitalClock("my clock:");
+myClock.start();
+// a) Create a new class PrecisionClock that inherits from DigitalClock and adds the
+//    parameter precision – the number of ms between 'ticks'. This precision parameter
+//    should default to 1 second if not supplied.
+
+// b) Create a new class AlarmClock that inherits from DigitalClock and adds the
+//    parameter wakeupTime in the format hh:mm. When the clock reaches this time, it
+//    should print a 'Wake Up' message and stop ticking. This wakeupTime parameter should
+//    default to 07:00 if not supplied.
+
+// *******************************************************************************************
 // // 9. We can delay execution of a function using setTimeout, where we need to provide both
 // //    the callback function and the delay after which it should execute.
 // // a) Create a promise-based alternative randomDelay() that delays execution for a
@@ -236,6 +314,7 @@ multiply.delay(500)(5, 5); // prints 25 after 500 milliseconds
 // }
 // randomDelay().then(() => console.log("There appears to have been a delay."));
 
+// *******************************************************************************************
 // // 10.Fetch is a browser-based function to send a request and receive a response from a server,
 // //    which uses promises to handle the asynchronous response.
 // //    The below fetchURLData uses fetch to check the response for a successful status

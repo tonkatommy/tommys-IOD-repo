@@ -31,18 +31,18 @@
     </template>
     <div id="card-list"></div>
     <script>
-      function addCard() {
+      function addCard(cardTitle, cardText) {
         // clone the template
         const template = document
           .getElementById("card-template")
           .content.cloneNode(true);
         // populate the template
-        template.querySelector(".card-title").innerText = "My Card Title";
-        template.querySelector(".card-text").innerText = "lorem ipsum ble bla";
+        template.querySelector(".card-title").innerText = cardTitle;
+        template.querySelector(".card-text").innerText = cardText;
         // include the populated template into the page
         document.querySelector("#card-list").appendChild(template);
       }
-      addCard();
+      addCard("Tommy's Card", "This is my first card that I made.");
     </script>
   </body>
 </html>

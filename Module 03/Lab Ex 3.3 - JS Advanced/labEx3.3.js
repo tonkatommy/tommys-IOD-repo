@@ -83,7 +83,7 @@
 // setTimeout(printMe, 300, "3rd debounce message");
 
 // *******************************************************************************************
-// console.log("\nLab Ex 3.3 Step 4. Output: ");
+// console.log("Lab Ex 3.3 Step 4. Output: \n");
 // // 4. The Fibonacci sequence of numbers is a famous pattern where the next number in the
 // //    sequence is the sum of the previous 2.
 // //    e.g. 1, 1, 2, 3, 5, 8, 13, 21, 34, etc.
@@ -112,9 +112,21 @@
 //   }, 1000);
 // };
 
-// printFib(5);
+// // printFib(5);
 
-// const printFibTimeOuts = () => {};
+// let loopCount = 10;
+
+// const printFibTimeOuts = (num1 = 0, num2 = 1, numLimit = 10) => {
+//   let numNext = num1 + num2;
+//   if (numLimit-- > 0) {
+//     setTimeout(() => {
+//       console.log(num1);
+//       printFibTimeOuts(num2, numNext, numLimit);
+//     }, 1000);
+//   }
+// };
+
+// printFibTimeOuts(0, 1, 20);
 
 // *******************************************************************************************
 // // 5. The following car object has several properties and a method which uses them to print a
@@ -411,6 +423,27 @@ function fetchURLData(url) {
   return fetchPromise;
 }
 
-fetchURLData("https://jsonplaceholder.typicode.com/todos/1")
-  .then((data) => console.log(data))
-  .catch((error) => console.error(error.message));
+// fetchURLData("https://jsonplaceholder.typicode.com/todos/1")
+//   .then((data) => console.log(data))
+//   .catch((error) => console.error(error.message));
+
+async function asyncFetchURLData(url) {
+  try {
+    const response = await fetch(url);
+    if (response.status === 200) {
+      const fetched = await response.json();
+      console.log(fetched);
+    } else {
+      throw new Error(`Request failed with status ${response.status}`);
+    }
+  } catch (error) {
+    console.log(error);
+  }
+}
+
+asyncFetchURLData("https://jsonplaceholder.typicode.com/todos/1");
+asyncFetchURLData("https://jsonplaceholder.typicode.com/todos/3");
+asyncFetchURLData("https://jsonplaceholder.typicode.com/todos/6");
+asyncFetchURLData("https://jsonplaceholder.typicode.com/todos/10");
+asyncFetchURLData("https://jsonplaceholder.typicode.com/todos/7");
+asyncFetchURLData("https://jsonplaceholder.typicode.com/todos/p");

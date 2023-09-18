@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="cards.css" />
+    <title>Lab Ex 4.2 - Templates</title>
+  </head>
+  <body>
+    <template id="card-template">
+      <div class="card">
+        <div class="card-body">
+          <div class="card-title"></div>
+          <div class="card-text"></div>
+        </div>
+      </div>
+    </template>
+
+    <template id="artist-card-template">
+      <div class="artist-card">
+        <div class="artist-card-body">
+          <div class="artist-card-name"></div>
+        </div>
+      </div>
+    </template>
+
+    <template id="artist-portfolio-card-template">
+      <div class="artist-card-portfolio">
+        <div class="artist-card-title"></div>
+        <div class="artist-url"></div>
+      </div>
+    </template>
+
+    <div id="card-list"></div>
+    <script src="cards.js"></script>
+  </body>
+</html>

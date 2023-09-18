@@ -13,6 +13,6 @@
   }
   50% {
     transform: translateY(300px);
-    background-color: darkgreen;
+    background-color: darkblue;
   }
 }

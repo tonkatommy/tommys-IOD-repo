@@ -30,7 +30,7 @@ fetch("https://fakestoreapi.com/products")
         {
           name: "# products",
           type: "bar",
-          data: Object.values(catCount),
+          data: Object.values,
         },
       ],
     };

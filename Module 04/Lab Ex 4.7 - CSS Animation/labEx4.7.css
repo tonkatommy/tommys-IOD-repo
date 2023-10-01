@@ -1,0 +1,18 @@
+.sq-one {
+  width: 200px;
+  height: 200px;
+  background-color: darkred;
+  animation: MoveUpDown 4s linear infinite;
+}
+
+@keyframes MoveUpDown {
+  0%,
+  100% {
+    transform: translateY(0);
+    background-color: darkred;
+  }
+  50% {
+    transform: translateY(300px);
+    background-color: darkblue;
+  }
+}

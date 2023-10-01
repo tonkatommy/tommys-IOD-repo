@@ -25,7 +25,7 @@ const artists = [
     portfolio: [
       {
         title: "portrait",
-        url: "https://collectionapi.metmuseum.org/api/collection/v1/iiif/436532/1671316/mai  n-image",
+        url: "https://collectionapi.metmuseum.org/api/collection/v1/iiif/436532/1671316/main-image",
       },
       {
         title: "sky",
@@ -64,41 +64,55 @@ const artists = [
 ];
 
 function addArtistCard(artist) {
+  //
+  if (artist.portfolio.length > 1) {
+  }
+
   // clone the template
   // console.log(artist.portfolio[0].title);
-  const artistTemplate = document
-    .getElementById("artist-card-template")
-    .content.cloneNode(true);
+  // const artistTemplate = document
+  //   .getElementById("artist-card-template")
+  //   .content.cloneNode(true);
 
   // populate the template
 
-  artistTemplate.querySelector(".artist-card-name").innerText = artist.name;
-
-  let artistPortfolioTemplate;
-
   artist.portfolio.forEach((element) => {
-    artistPortfolioTemplate = document
-      .getElementById("artist-portfolio-card-template")
+    // console.log(artist.name);
+    const artistTemplate = document
+      .getElementById("artist-card-template")
       .content.cloneNode(true);
-
-    console.log(artistPortfolioTemplate);
-
-    console.log(element.title);
-
-    artistPortfolioTemplate.querySelector(".artist-card-title").innerText =
-      element.title;
-    artistPortfolioTemplate.querySelector(".artist-url").innerText =
-      element.url;
-
-    console.log("after");
-
-    artistTemplate
-      .querySelector(".artist-card-name")
-      .appendChild(artistPortfolioTemplate);
+    artistTemplate.querySelector(".card-title").innerText = artist.name;
+    artistTemplate.querySelector(".card-text").innerText = element.title;
+    artistTemplate.querySelector(".card-img-top").src = element.url;
+    // console.log(temp2.querySelector(".card-title").innerText);
+    document.querySelector("#card-list").appendChild(artistTemplate);
   });
 
+  // let artistPortfolioTemplate;
+
+  // artist.portfolio.forEach((element) => {
+  //   artistPortfolioTemplate = document
+  //     .getElementById("artist-portfolio-card-template")
+  //     .content.cloneNode(true);
+
+  //   console.log(artistPortfolioTemplate);
+
+  //   console.log(element.title);
+
+  //   artistPortfolioTemplate.querySelector(".artist-card-title").innerText =
+  //     element.title;
+  //   artistPortfolioTemplate.querySelector(".artist-url").innerText =
+  //     element.url;
+
+  //   console.log("after");
+
+  //   artistTemplate
+  //     .querySelector(".artist-card-name")
+  //     .appendChild(artistPortfolioTemplate);
+  // });
+
   // include the populated template into the page
-  document.querySelector("#card-list").appendChild(artistTemplate);
+  // document.querySelector("#card-list").appendChild(artistTemplate);
 }
 
 artists.forEach((artist) => {

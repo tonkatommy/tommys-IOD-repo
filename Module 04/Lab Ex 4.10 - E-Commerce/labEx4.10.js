@@ -195,7 +195,7 @@ loadCategories(categories);
 
 // Filter function to filter categories
 const filtCat = (category) => {
-  const filteredProducts = [];
+  let filteredProducts = [];
   let dropdownText = "All Items";
 
   if (category === "all") {

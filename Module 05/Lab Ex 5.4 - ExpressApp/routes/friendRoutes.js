@@ -37,6 +37,25 @@ router.get("/filter", (req, res) => {
   }
 });
 
+router.get("/filter/:letter", (req, res) => {
+  console.log(req.query);
+  console.log(req.params);
+  let filterLetter = req.params.letter;
+  let matchingFriends = [...friends];
+
+  if (filterLetter) {
+    matchingFriends = matchingFriends.filter((friend) => friend.name[0] == filterLetter);
+  }
+
+  if (matchingFriends.length > 0) {
+    // return valid data when the gender matches
+    res.status(200).json(matchingFriends);
+  } else {
+    // and an error response when there are no matches
+    res.status(404).json({ error: "No friends matching letter " + filterLetter });
+  }
+});
+
 // 2. Get information about this request from the headers
 router.get("/info", (req, res) => {
   console.log(req.headers);

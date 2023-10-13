@@ -1,9 +1,21 @@
-function Greeting({ name = "", children }) {
-  const displayText = name ? name : "Explorer!";
+// function Greeting({ name = "", children }) {
+//   const displayText = name ? name : "Explorer!";
+//   return (
+//     <>
+//       <h1>Hello {displayText}</h1>
+//       {children}
+//     </>
+//   );
+// }
+
+// export default Greeting;
+
+function Greeting(props) {
+  const displayText = props.name ? props.name : "Explorer!";
   return (
     <>
       <h1>Hello {displayText}</h1>
-      {children}
+      {props.children}
     </>
   );
 }

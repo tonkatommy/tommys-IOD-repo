@@ -4,6 +4,7 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 import ComplexComment from "./ComplexComment";
 import { FullName } from "./FullName";
+import Greeting from "../../SampleApp/src/components/Greeting";
 
 function App() {
   // object storing comment data - passed as props
@@ -22,6 +23,7 @@ function App() {
       {/* render the component, passing object data as props */}
       <ComplexComment author={comment.author} date={comment.date} text={comment.text} />
       <FullName first="Tommy" last="Tonka"></FullName>
+      <Greeting name="Tommy"></Greeting>
     </>
   );
 }

@@ -5,6 +5,8 @@ import { CalcOperator } from "./CalcOperator";
 export const Calculator = (props) => {
   const [result, setResult] = useState(0);
 
+  // calculateResult function takes in 3 params
+  // num1, num2, operator
   const calculateResult = (e) => {
     e.preventDefault();
     // Do calculations here?
@@ -12,6 +14,7 @@ export const Calculator = (props) => {
     const num2 = e.target.num2.value;
     const operator = e.target.operator.value;
 
+    // apply correct calculation using operator in switch
     switch (operator) {
       case "+":
         setResult(parseFloat(num1) + parseFloat(num2));
@@ -34,6 +37,8 @@ export const Calculator = (props) => {
     }
   };
 
+  // component return:
+  // Basic calculator input form
   return (
     <>
       <h1>Calculator</h1>
@@ -42,7 +47,7 @@ export const Calculator = (props) => {
           <CalcInput id={"num1"} text={"Number 1:"}></CalcInput>
           <CalcOperator></CalcOperator>
           <CalcInput id={"num2"} text={"Number 2:"}></CalcInput>
-          <button onClick={() => calculateResult(num1, num2, operator)}>=</button>
+          <button>=</button>
         </form>
         <div>
           <label htmlFor="result">Result:</label>

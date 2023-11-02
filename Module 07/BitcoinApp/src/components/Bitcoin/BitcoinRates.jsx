@@ -1,5 +1,6 @@
-import { useEffect, useState } from "react";
-import axios from "axios";
+import { useState } from "react";
+import { useGetData } from "../hooks/useGetData";
+import { useEmojiContext } from "../Context/EmojiContext";
 
 // array of currencies strings
 const currencies = ["USD", "AUD", "NZD", "GBP", "EUR", "SGD"];
@@ -11,51 +12,55 @@ export function BitcoinRates() {
   // useState used for tracking which currency is selected
   const [currency, setCurrency] = useState(currencies[0]);
   // useState used for tracking the BTC value
-  const [btcValue, setBtcValue] = useState(0);
+  // const [btcValue, setBtcValue] = useState(0);
+  const { currentEmoji, updateEmoji } = useEmojiContext();
 
   // the fetch url
-  const btcUrl = `https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=${currency.toLowerCase()}&${apiKey}`;
+  const coinGeckoUrl = `https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=${currency.toLowerCase()}&${apiKey}`;
+
+  const btcValue = useGetData(coinGeckoUrl);
+  // console.log(btcValue);
 
   // useEffect used to handle the fetching of data
-  useEffect(() => {
-    console.log("running effect");
-    let ignore = false;
+  // useEffect(() => {
+  //   console.log("running effect");
+  //   let ignore = false;
 
-    axios
-      .get(btcUrl)
-      .then((json) => {
-        if (!ignore) setBtcValue(json.data.bitcoin[currency.toLowerCase()]);
-      })
-      .catch((err) => console.log(err));
+  //   // axios to get the json data from the url
+  //   axios
+  //     .get(coinGeckoUrl)
+  //     .then((json) => {
+  //       !ignore ? setBtcValue(json.data.bitcoin[currency.toLowerCase()]) : null;
+  //     })
+  //     .catch((err) => console.log(err));
 
-    // fetch(btcUrl)
-    //   .then((response) => response.json())
-    //   .then((json) => {
-    //     !ignore ? setBtcValue(json.bitcoin[currency.toLowerCase()]) : null;
-    //   });
-
-    return () => {
-      ignore = true;
-      console.log("clean up effect");
-    };
-  }, [currency]);
+  //   return () => {
+  //     ignore = true;
+  //     console.log("clean up effect");
+  //   };
+  // }, [currency]);
 
   const options = currencies.map((curr) => (
-    <option value={curr} key={curr}>
+    <option
+      value={curr}
+      key={curr}>
       {curr}
     </option>
   ));
 
   return (
     <div className="BitcoinRates componentBox">
-      <h3>Bitcoin Exchange Rate</h3>
+      <h2>Bitcoin Exchange Rate</h2>
       <label>
         Choose currency:
-        <select value={currency} onChange={(e) => setCurrency(e.target.value)}>
+        <select
+          value={currency}
+          onChange={(e) => setCurrency(e.target.value)}>
           {options}
         </select>
       </label>
-      <h3>${btcValue}</h3>
+      <h3>${btcValue ? btcValue.bitcoin[currency.toLowerCase()] : 0}</h3>
+      <h3>Todays mood: ${currentEmoji}</h3>
     </div>
   );
 }

@@ -1,0 +1,16 @@
+.Navbar ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  padding: 0;
+}
+.Navbar ul li a {
+  padding: 1em;
+  color: inherit;
+  text-transform: uppercase;
+  display: inline-block;
+  text-decoration: none;
+}
+.Navbar ul li a.active {
+  font-weight: bold;
+}

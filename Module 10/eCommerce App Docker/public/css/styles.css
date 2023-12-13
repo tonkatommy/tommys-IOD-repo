@@ -1,0 +1,9 @@
+.card-title {
+  font-size: smaller;
+}
+
+@media (min-width: 576px) {
+  .card-title {
+    font-size: large;
+  }
+}

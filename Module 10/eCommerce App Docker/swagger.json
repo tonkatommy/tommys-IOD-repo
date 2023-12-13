@@ -1,0 +1,47 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "Tommy's eCommerce Project",
+    "description": "A simple shop API",
+    "license": {
+      "name": "MIT",
+      "url": "https://opensource.org/licenses/MIT"
+    }
+  },
+  "host": "localhost:3000",
+  "basePath": "/",
+  "tags": [
+    {
+      "name": "Shop",
+      "description": "API for retrieving data in the system"
+    }
+  ],
+  "schemes": ["http"],
+  "consumes": ["application/json"],
+  "produces": ["application/json"],
+  "paths": {
+    "/shop/products": {
+      "get": {
+        "tags": ["Products"],
+        "summary": "Get a list of all products",
+        "responses": {
+          "200": {
+            "description": "This service allows you to retrieve a list of all products"
+          }
+        }
+      }
+    },
+    "/shop/categories": {
+      "get": {
+        "tags": ["Categories"],
+        "summary": "Get a list of all categories",
+        "responses": {
+          "200": {
+            "description": "This service allows you to retrieve a list of all categories"
+          }
+        }
+      }
+    }
+  }
+}

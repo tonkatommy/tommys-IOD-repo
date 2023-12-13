@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Lab Ex 4.10 - Ecommerce Site</title>
+    <!-- Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="/favicon/site.webmanifest" />
+    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#2d89ef" />
+    <meta name="theme-color" content="#ffffff" />
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="./css/styles.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous" />
+    <!-- Script for Font Awesome -->
+    <script src="https://kit.fontawesome.com/4d3bf4469a.js" crossorigin="anonymous"></script>
+    <!-- CARD TEMPLATE -->
+    <template id="card-template">
+      <div class="col mb-5">
+        <div class="card h-100">
+          <!-- Sale badge-->
+          <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">
+            <i class="fa-solid category-badge"></i>
+          </div>
+          <!-- Product image-->
+          <div class="p-2 p-lg-5">
+            <img class="card-img-top bg-dark" src="..." alt="..." />
+          </div>
+          <!-- Product details-->
+          <div class="card-body p-4">
+            <div class="text-center">
+              <!-- Product name-->
+              <h5 class="card-title">Card Title</h5>
+              <!-- Product reviews-->
+              <div class="d-flex justify-content-center small text-warning mb-2">
+                <div class="star1"></div>
+                <div class="star2"></div>
+                <div class="star3"></div>
+                <div class="star4"></div>
+                <div class="star5"></div>
+              </div>
+              <!-- Product price-->
+              <div class="card-text">
+                <!-- PRICE GET POPULATED HERE -->
+              </div>
+            </div>
+          </div>
+          <!-- Product actions-->
+          <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+            <div class="text-center">
+              <a class="btn btn-outline-dark mt-auto view-more-link">View More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </template>
+    <!-- DROPDOWN Links Template -->
+    <template id="dropdown-item-template">
+      <li>
+        <a class="dropdown-item" href="#" value="category name">Category Link</a>
+      </li>
+    </template>
+    <!-- MODAl TEMPLATE -->
+    <template id="modalTemplate">
+      <!-- Modal -->
+      <div class="modal fade" id="productModal" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="productModalLabel">
+                <!-- MODAL TITLE -->
+                Modal title
+              </h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">...</div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </template>
+  </head>
+  <body>
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container px-4 px-lg-5">
+        <a class="navbar-brand" href="#!">E-Commerce Site</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#top-navbar"
+          aria-controls="top-navbar"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="top-navbar">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#!">About</a></li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                id="navbarDropdown"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >Shop</a
+              >
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#!">All Products</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="#!">Popular Items</a></li>
+                <li><a class="dropdown-item" href="#!">New Arrivals</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <button class="btn btn-outline-dark" type="submit">
+              <i class="bi-cart-fill me-1"></i>
+              Cart
+              <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- Header-->
+    <header class="bg-dark py-5">
+      <div class="container px-4 px-lg-5 my-5">
+        <div class="text-center text-white">
+          <h1 class="display-4 fw-bolder">Lab Ex 4.10 - E-Commerce</h1>
+          <p class="lead fw-normal text-white-50 mb-0">Completed by Tommy Goodman</p>
+        </div>
+      </div>
+    </header>
+    <!-- Section-->
+
+    <section class="category-selector">
+      <div class="container px-4 px-lg-5 mt-5">
+        <div class="category-selection text-center">
+          <h5 class="mb-3">Select a Category:</h5>
+          <div class="dropdown-center">
+            <button
+              id="dropdown-menu-btn"
+              class="btn btn-secondary dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false">
+              All Items
+            </button>
+            <ul id="dropdown-menu-list" class="dropdown-menu">
+              <!-- CATEGORY OPTIONS GET POPULATED HERE -->
+            </ul>
+          </div>
+          <h4 id="category-list-title" class="category-title mt-5">All Items</h4>
+        </div>
+      </div>
+    </section>
+    <!-- Section -->
+    <section class="py-5">
+      <div class="container px-4 px-lg-5">
+        <!-- Row of Cards -->
+        <div id="modalRow">
+          <!-- MODAL GETS POPULATED HERE -->
+        </div>
+        <div id="card-row" class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+          <!-- CARDS GET POPULATED HERE -->
+        </div>
+      </div>
+    </section>
+    <!-- Footer-->
+    <footer class="py-5 bg-dark">
+      <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Your Website 2023</p></div>
+    </footer>
+    <!-- Axios CDN link -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- Bootstrap core JS-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"></script>
+    <!-- Core theme JS-->
+    <script type="module" src="./js/script.js"></script>
+  </body>
+</html>
